@@ -1,0 +1,50 @@
+.col-3 {
+    width: 25%;
+}
+.humor-wrapper {
+    display: flex;
+    width: 100%;
+}
+.humor-item {
+    &:hover {
+        cursor: pointer;
+        .humor-content {
+            display: block;
+        }
+        img {
+            opacity: 80%;
+        }
+    }
+    img {
+        width: 95%;
+        height: 318px;
+        border-radius: 10px;
+    }
+    .humor-content {
+        display: none;
+        position: absolute;
+        top: 125px;
+        text-align: center;
+        width: 23.8%;
+        color: gold;
+        h2 {
+            font-size: 29px;
+            height: 70px;
+        }
+        .border {
+            border-bottom: 2px solid gold;
+            width: 30px;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+        .star {
+            color: wheat;
+            padding-bottom: 2.5px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 20px;
+            padding-bottom: 2.5px;
+        }
+    }
+}
