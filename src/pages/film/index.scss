@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1090px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-3 {
+    width: 25%;
+}
+.col-6 {
+    width: 50%;
+}
+.film-wrapper {
+    padding-top: 45px;
+    ul {
+        display: flex;
+        padding: 14px 0;
+        li {
+            list-style-type: none;
+            padding-right: 30px;
+            a {
+                text-decoration: none;
+                color: #7777779c;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .active {
+                color: black;
+                border-bottom: 3px solid chocolate;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+.film-border-bottom {
+    border-bottom: 1px solid silver;
+    margin-bottom: 40px;
+}
+.film-row-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .film-wrap {
+        padding: 0 4px;
+        position: relative;
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
+        display: table;
+        height: 455px;
+        &:hover .film-overlay {
+            opacity: 1;
+        }
+        .film-decription-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .film-overlay {
+            z-index: 99;
+            width: 97%;
+            height: 88%;
+            -webkit-transition: all 300ms;
+            transition: all 300ms;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-left: 3px;
+        }
+        .film-movie-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: gold;
+            label {
+                color: gold;
+            }
+        }
+        img {
+            height: 400px;
+            margin-bottom: 5px;
+            display: table-cell;
+        }
+        .film-food {
+            width: 100%;
+
+            text-align: center;
+            label {
+                color: #666666;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -4,47 +4,64 @@
 .humor-wrapper {
     display: flex;
     width: 100%;
-}
-.humor-item {
-    &:hover {
+    .humor-wrap {
+        position: relative;
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
         cursor: pointer;
-        .humor-content {
-            display: block;
+        z-index: 0;
+        &:hover .humor-overlay {
+            opacity: 1;
+        }
+        .humor-decription-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .humor-overlay {
+            z-index: 99;
+            width: 95%;
+            height: 100%;
+            border-radius: 10px;
+            -webkit-transition: all 300ms;
+            transition: all 300ms;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .humor-movie-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: gold;
+            h2 {
+                font-size: 21px;
+                height: 49px;
+            }
+            .humor-border {
+                border-bottom: 2px solid gold;
+                width: 30px;
+                margin: auto;
+                margin-bottom: 5px;
+            }
+            .humor-star {
+                color: wheat;
+                padding-bottom: 2.5px;
+            }
+            p {
+                font-weight: 600;
+                font-size: 20px;
+                padding-bottom: 2.5px;
+                margin: 0;
+            }
         }
         img {
-            opacity: 80%;
-        }
-    }
-    img {
-        width: 95%;
-        height: 318px;
-        border-radius: 10px;
-    }
-    .humor-content {
-        display: none;
-        position: absolute;
-        top: 125px;
-        text-align: center;
-        width: 23.8%;
-        color: gold;
-        h2 {
-            font-size: 29px;
-            height: 70px;
-        }
-        .border {
-            border-bottom: 2px solid gold;
-            width: 30px;
-            margin: auto;
-            margin-bottom: 5px;
-        }
-        .star {
-            color: wheat;
-            padding-bottom: 2.5px;
-        }
-        p {
-            font-weight: 600;
-            font-size: 20px;
-            padding-bottom: 2.5px;
+            width: 95%;
+            height: 318px;
+            border-radius: 10px;
         }
     }
 }

@@ -5,25 +5,25 @@ import { faArrowRightFromBracket, faEarthAsia, faLandmark, faLanguage } from '@f
 
 function Account() {
     return (
-        <div className="outside">
-            <div className="head-account">
+        <div className="account-outside">
+            <div className="account-head">
                 <img src={Logo} className="account-logo" />
             </div>
-            <div className="main">
-                <div className="main-label">
+            <div className="account-main">
+                <div className="account-main-label">
                     <h5>Rose</h5>
                     <a href="#">Rose1102@gmail.com</a>
                 </div>
-                <div className="main-item">
-                    <FontAwesomeIcon icon={faLandmark} className="icon" />
+                <div className="account-main-item">
+                    <FontAwesomeIcon icon={faLandmark} className="account-icon" />
                     <p>History</p>
                 </div>
-                <div className="main-item">
-                    <FontAwesomeIcon icon={faEarthAsia} className="icon" />
+                <div className="account-main-item">
+                    <FontAwesomeIcon icon={faEarthAsia} className="account-icon" />
                     <p>Language</p>
                 </div>
-                <div className="main-item">
-                    <FontAwesomeIcon icon={faArrowRightFromBracket} className="icon" />
+                <div className="account-main-item">
+                    <FontAwesomeIcon icon={faArrowRightFromBracket} className="account-icon" />
                     <p>Log out</p>
                 </div>
             </div>

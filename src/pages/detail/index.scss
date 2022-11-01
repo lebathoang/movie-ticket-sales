@@ -22,42 +22,47 @@
 .detail-head {
     background: #c0c0c06b;
     border-bottom: 1px solid silver;
+    padding-top: 50px;
 }
 .detail-header {
     display: flex;
     padding: 5px 0;
     align-items: center;
-    .icon-home {
-        :hover {
-            cursor: pointer;
-        }
+    color: black;
+    .detail-icon-home {
+        color: black;
+        cursor: pointer;
     }
     .detail-icon {
         padding: 0 15px;
         color: #54535391;
     }
-    h3 {
+    p {
         text-decoration: underline;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
     }
 }
 .detail-content {
     display: flex;
     padding-bottom: 15px;
-    h1 {
+    h2 {
         padding: 20px 5px 10px 0px;
-        color: chocolate;
+        color: black;
     }
     p {
-        color: chocolate;
-        font-size: 21px;
+        color: black;
+        font-size: 18px;
         padding-right: 30px;
+        margin: 0;
     }
     img {
         width: 100%;
         height: 350px;
         border-radius: 10px;
     }
-    .rate {
+    .detail-rate {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -65,7 +70,7 @@
         li {
             list-style-type: none;
         }
-        .numberoflikes {
+        .detail-numberoflikes {
             border: 5px solid silver;
             border-radius: 50%;
             width: 100px;
@@ -74,16 +79,16 @@
             span {
                 font-size: 30px;
                 font-weight: 600;
-                color: chocolate;
+                color: black;
             }
         }
-        .IDMB {
+        .detail-IDMB {
             width: 120px;
-            color: chocolate;
-            .vote {
+            color: black;
+            .detail-vote {
                 display: flex;
                 align-items: baseline;
-                .number-big {
+                .detail-number-big {
                     font-size: 30px;
                     font-weight: 600;
                 }
@@ -91,11 +96,12 @@
             p {
                 padding: 5px 0 3px;
                 font-size: 12px;
+                margin: 0;
             }
         }
-        .metacritic {
+        .detail-metacritic {
             width: 120px;
-            color: chocolate;
+            color: black;
             span {
                 font-size: 30px;
                 font-weight: 600;
@@ -103,6 +109,7 @@
             p {
                 padding: 5px 0 3px;
                 font-size: 12px;
+                margin: 0;
             }
         }
         button {
@@ -116,61 +123,68 @@
             :hover {
                 cursor: pointer;
             }
-            .icon-heart {
+            .detail-icon-heart {
                 font-size: 24px;
                 color: silver;
             }
         }
     }
-    .the-cast {
+    .detail-the-cast {
         margin: 75px 50px 0 0;
         label {
-            font-size: 24px;
-            color: chocolate;
+            font-size: 18px;
+            color: black;
         }
-        .wrap-cast {
+        .detail-wrap-cast {
             margin-top: 22px;
             display: flex;
             justify-content: space-between;
-            .cast {
+            .detail-cast {
                 img {
                     width: 115px;
                     height: 155px;
                     border-radius: 5px;
                 }
                 p {
-                    font-size: 17px;
-                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 600;
                     text-align: center;
                     width: 115px;
                     height: 38px;
+                    padding: 0;
+                    margin: 0;
                 }
             }
         }
     }
 }
-.rate-border {
+.detail-rate-border {
     border: 3px solid silver;
     border-radius: 10px;
 }
-.right-content {
-    padding: 15px 0 5px;
-    h3 {
-        color: chocolate;
+.detail-right-content {
+    padding: 10px 0 5px;
+    label {
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
     }
     p {
-        font-size: 18px;
+        font-size: 12px;
+        margin: 0;
     }
-    .revenue {
+    .detail-revenue {
         display: flex;
         align-items: center;
-        .chart {
-            font-size: 22px;
-            color: chocolate;
+        .detail-chart {
+            font-size: 16px;
+            color: black;
         }
         p {
-            font-size: 26px;
+            font-size: 14px;
+            font-weight: 400;
             padding-left: 11px;
+            margin: 0;
         }
     }
 }

@@ -12,22 +12,22 @@
     width: 25%;
 }
 .footer-wrap {
-    padding: 40px 0 20px;
-    height: 265px;
+    padding: 25px 0 15px;
+    height: 270px;
     background-color: #6666667d;
-    .outside-box {
+    .footer-outside-box {
         display: flex;
-        .content-box {
+        .footer-content-box {
             h2 {
                 color: #ffffffb3;
                 border-left: 5px solid gold;
                 padding-left: 10px;
                 font-size: 20px;
+                margin: 0;
             }
             ul {
-                padding: 17px 0;
+                padding: 15px 0;
                 li {
-                    margin-bottom: 8px;
                     list-style-type: none;
                     display: flex;
                     align-items: center;
@@ -36,20 +36,21 @@
                         cursor: pointer;
                         color: gold;
                     }
-                    .icon-angle {
+                    .footer-icon-angle {
                         font-size: 14px;
                     }
                     p {
                         padding-left: 5px;
+                        margin: 0;
                     }
                 }
             }
         }
     }
 }
-.icon-box {
+.footer-icon-box {
     padding: 13px 0;
-    .icon-facebook {
+    .footer-icon-facebook {
         font-size: 24px;
         margin-right: 14px;
         color: #ffffffb3;
@@ -58,7 +59,7 @@
             cursor: pointer;
         }
     }
-    .icon-youtube {
+    .footer-icon-youtube {
         font-size: 24px;
         margin-right: 14px;
         color: #ffffffb3;
@@ -67,7 +68,7 @@
             cursor: pointer;
         }
     }
-    .icon-instagram {
+    .footer-icon-instagram {
         font-size: 24px;
         margin-right: 14px;
         color: #ffffffb3;
@@ -76,7 +77,7 @@
             cursor: pointer;
         }
     }
-    .icon-download {
+    .footer-icon-download {
         font-size: 24px;
         color: #ffffffb3;
         margin-right: 14px;
@@ -86,20 +87,26 @@
         }
     }
 }
-.border {
+.footer-border {
     border: 1px solid #ffffffb3;
 }
-.bottom {
-    display: flex;
-    align-items: center;
-    padding-top: 5px;
-    .footer-image {
-        width: 50px;
-        height: 50px;
-    }
-    i {
-        color: #ffffffb3;
-        padding-left: 10px;
-        font-weight: 600;
+.footer-bottom {
+    background: white;
+    .footer-bottom-flex {
+        display: flex;
+        align-items: center;
+        padding-top: 1px;
+        .footer-image {
+            width: 70px;
+            height: 50px;
+        }
+        p {
+            margin: 0;
+            i {
+                color: chocolate;
+                padding-left: 10px;
+                font-weight: 600;
+            }
+        }
     }
 }

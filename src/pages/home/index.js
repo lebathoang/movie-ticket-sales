@@ -1,18 +1,22 @@
+import React from 'react';
 import Header from '~/components/layout/header';
 import Footer from '~/components/layout/footer';
-import banner from '~/assets/images/banner.png';
 import Banner from '~/components/banner';
 import Main from '~/components/main';
+import Login from '~/components/login';
 import './index.scss';
+import { useSelector } from 'react-redux';
 
 function Home() {
+    const appState = useSelector((state) => state);
+    const auth = appState.auth;
     return (
         <div className="wrap">
-            <img className="banner" src={banner} />
+            <Header />
+            <Banner />
             <div className="content">
-                <Header />
                 <div className="scroll">
-                    <Banner />
+                    {auth?.loggedIn ? <Login /> : ''}
                     <Main />
                     <Footer />
                 </div>

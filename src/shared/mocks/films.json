@@ -10,8 +10,12 @@
         "Star": 9.4,
         "Directer": "Anthony Russo, Joe Russo",
         "Cast": "Robert Downey Jr, Chris Evans, Chris Hemsworth, Scarlett Johansson, Mark Ruffalo, Jeremy Renner",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 120
+        "Like": 120,
+        "Title": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in orderto reverse Thanos' actions and restore balance to the universe.",
+        "Idmb": 8.1,
+        "Metacritic": 71,
+        "Tomatoes": 84,
+        "Revenue": 2.798
     },
     {
         "Name": "Avatar",
@@ -24,8 +28,12 @@
         "Star": 8.6,
         "Directer": "James Cameron",
         "Cast": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Giovanni Ribisi, Michelle Rodriguez, Stephen Lang",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 116
+        "Like": 116,
+        "Title": "Avatar is the story of the 'reluctant' hero Jake Sully - a former Marine officer who is half-paralyzed. His twin brother was selected to participate in a gene transplant program with the alien Na'vi to create a new species that can breathe the air on the planet Pandora. This new breed is called Avatar. After Jake's brother was killed, Jake was chosen to replace his brother and became an Avatar, Jake was tasked with exploring and researching the planet Pandora. The information he collected is very valuable for the campaign to invade this second blue planet of mankind.",
+        "Idmb": 7.8,
+        "Metacritic": 83,
+        "Tomatoes": 82,
+        "Revenue": 2.878
     },
     {
         "Name": "Kingdom in the clouds",
@@ -38,11 +46,15 @@
         "Star": 7.9,
         "Directer": "Shibayama Tsutomu",
         "Cast": "Nomura Michiko, Oyama Nobuyo, Ohara Noriko, Tatekabe Kazuya, Kimotsuki Kaneta, Ryoichi Tanaka",
-        "Language": "Japan - Vietnamese subtitles",
-        "Like": 112
+        "Like": 112,
+        "Title": "After building their own kingdom in the clouds, Nobita and friends discover a world where extinct animals and advanced sky-humans thrive.",
+        "Idmb": 7.0,
+        "Metacritic": 74,
+        "Tomatoes": 72,
+        "Revenue": 26.6
     },
     {
-        "Name": "Pokemon : arceus and the pearl of life",
+        "Name": "Pokemon: arceus and the pearl of life",
         "Id": 4,
         "Time": 98,
         "Price": 30,
@@ -52,8 +64,12 @@
         "Star": 8.0,
         "Directer": "Yuyama Kunihiko",
         "Cast": "Matsumoto Rica, Miwa Akihiro, Sarah Natochenny, Otani Ikue, Kitano Kie, Emily Bauer",
-        "Language": "Japan - Vietnamese subtitles",
-        "Like": 117
+        "Like": 117,
+        "Title": "The legendary, invincible Arceus has returned to Michina to reclaim the Gem of Life. Even Dialga, Palkia, and Giratina combined could not stop Arceus' destructive power. But this time Ash and his friends will be there to find the only way out.",
+        "Idmb": 6.2,
+        "Metacritic": 68,
+        "Tomatoes": 68,
+        "Revenue": 32.1
     },
     {
         "Name": "Shaman King: The Last War",
@@ -66,8 +82,12 @@
         "Star": 8.1,
         "Directer": "Takei Hiroyuki",
         "Cast": "Yoko Hikasa, Megumi Hayashibara, Park Romi, Minami Takayama, Katsuyuki Konishi, Inuyama Inuko",
-        "Language": "Japan - Vietnamese subtitles",
-        "Like": 119
+        "Like": 119,
+        "Title": "The magician Asakura Yoh participates in the tournament held every 500 years, competing against other mages to become the all-powerful Sorcerer King.",
+        "Idmb": 7.0,
+        "Metacritic": 72,
+        "Tomatoes": 62,
+        "Revenue": 18.3
     },
     {
         "Name": "Captain America: Civil War",
@@ -80,36 +100,48 @@
         "Star": 8.4,
         "Directer": "Joe Russo, Anthony Russo",
         "Cast": "Chris Evans, Robert Downey Jr, Scarlett Johansson, Sebastian Stan, Chadwick Boseman, Jeremy Renner",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 116
+        "Like": 116,
+        "Title": "The story revolves around Steve Rogers (Captain America) leading a team of superheroes with members of the Avengers with the goal of continuing their efforts to protect humanity. But after many incidents happened because the Avengers team damaged property, the government set up a management agency and supervised the group. This caused a split within the Avengers group, creating two opposing factions. One side is led by Steve Rogers (Captain America) with the desire to maintain the group to carry out the goal of protecting humanity without government interference. The other side belongs to Tony Stark (Iron Man) who always supports monitoring and is accountable for everything he does to the government.",
+        "Idmb": 7.8,
+        "Metacritic": 80,
+        "Tomatoes": 90,
+        "Revenue": 1.153
     },
     {
-        "Name": "Eternal Love",
+        "Name": "Once Upon a Time",
         "Id": 7,
         "Time": 131,
         "Price": 40,
-        "Image": "https://anh.eva.vn/upload/3-2017/images/2017-08-12/4-diem-cuu-van-danh-du-cho-tam-sinh-tam-the-cua-luu-diec-phi-tam-01-eva-vn-1502533923-width620height827.jpg",
+        "Image": "http://tvhai.co/wp-content/uploads/2021/10/spl-tvhayorg-11580.jpg",
         "Category": "Romantic",
         "PremiereDate": "03 January 2023",
         "Star": 9.0,
         "Directer": "Lý Quốc Lập, Trịnh Tiểu Đinh",
         "Cast": "Dương Dương, Lưu Diệc Phi, Bành Tử Tô, Lý Thuần, La Tấn, Nghiêm Khoan",
-        "Language": "China - Vietnamese subtitles",
-        "Like": 116
+        "Like": 116,
+        "Title": "The story revolves around the love between Crown Prince Cuu Trung Thien - Da Hoa (Duong Duong) and Thanh Khau's High God Bach Thien (Liu Yifei). During the sealing of the enemy Kinh Thuong, Bach Thien was hit by his evil magic, sealed with immortal magic and memories, becoming a mortal named To To. By chance, she met Crown Prince Da Hoa in the form of a black snake when he came down to the earth to destroy the demon. Because of her love for that mortal girl, Da Hoa recklessly revealed her human form, and married her on earth. But this secret was finally revealed, To To was arrested in Cuu Trung Thien and only kept his life because he was pregnant with Da Hoa's child. To protect To To, Da Hoa pretends not to care about her. However, he unwittingly created conditions for To Cam - who had been in love with him for many years - to have the opportunity to harm To To",
+        "Idmb": 7.8,
+        "Metacritic": 80,
+        "Tomatoes": 82,
+        "Revenue": 83.3
     },
     {
         "Name": "Journey To The West: Surprise",
         "Id": 8,
         "Time": 112,
         "Price": 40,
-        "Image": "https://upload.wikimedia.org/wikipedia/vi/7/77/Journey_to_the_West_%28Zhejiang_TV_series%29.jpg",
+        "Image": "https://thumbnail.yeuphim88.net/public/media/thumb/film/tay-du-ky-la-truyen-260x340.jpg",
         "Category": "Humor, Act",
         "PremiereDate": "03 January 2023",
         "Star": 8.7,
         "Directer": "Dịch Tiểu Tinh",
         "Cast": "Trần Bách Lâm, Lưu Tuần Tử Mặc, Mike D. Angelo, Mã Thiên Vũ, Cổ Linh, Bạch Khách",
-        "Language": "China - Vietnamese subtitles",
-        "Like": 113
+        "Like": 113,
+        "Title": "Movie 'Journey to the West' - The film's content revolves around the 'super-smug' little guy Vuong Dai Thuy (Bach Khac) since he was born with two sharp horns on his head and a bit of 'smack' magic. Therefore, Dai Thuy is considered the king of the earth. However, when he met the four teachers and students of Tang Tang, Vuong Dai Thuy's life changed.",
+        "Idmb": 7.9,
+        "Metacritic": 78,
+        "Tomatoes": 81,
+        "Revenue": 17.0
     },
     {
         "Name": "Kung Fu Yoga",
@@ -122,8 +154,12 @@
         "Star": 8.4,
         "Directer": "Đường Quý Lễ",
         "Cast": "Thành Long, Sonu Sood, Disha Patani, Mẫu Kỳ Di Nhã, Amyra Dastur, Lý Trị Đình",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 110
+        "Like": 110,
+        "Title": "Movie Kung Fu Yoga Jack is a Chinese archeology professor. He collaborates with beautiful Indian female professor Ashmita and assistant Kyra to find the missing Magadha treasure. In the Tibetan ice cave, they discover the remains of a royal army buried with treasure and ambushed by Randall, a descendant of the rebel leader. When they got out, they went to Dubai to find the diamond in the cave being auctioned. After many events, Jack and his friends find a mountain temple, use the diamond to open the real treasure.",
+        "Idmb": 7.1,
+        "Metacritic": 69,
+        "Tomatoes": 58,
+        "Revenue": 254.3
     },
     {
         "Name": "Kungfu Panda",
@@ -136,22 +172,29 @@
         "Star": 8.7,
         "Directer": "John Stevenson, Mark Osborne",
         "Cast": "Jack Black, Thành Long, Jim Hong, Lucy Liu, Dustin Hoffman, Angelina Jolie",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 117
+        "Like": 117,
+        "Title": "When the mighty villain destroys the peace of his valley, the lazy panda takes up the challenge to follow his destiny - to become a martial artist.",
+        "Idmb": 7.6,
+        "Metacritic": 79,
+        "Tomatoes": 80
     },
     {
-        "Name": "The Batman",
+        "Name": "Batman: Exposing the Truth",
         "Id": 11,
         "Time": 112,
         "Price": 50,
-        "Image": "https://static.247phim.com/164662/conversions/6256a8aa8114a_gmU7P3FzGFsl2wiSDhx9znZCNub-435_627.jpg",
+        "Image": "https://www.cgv.vn/media/catalog/product/cache/3/image/c5f0a1eff4c394a251036189ccddaacd/p/o/poster_batman-1.jpg",
         "Category": "Act, Science Fiction",
         "PremiereDate": "01 January 2023",
         "Star": 8.4,
         "Directer": "Matt Reeves",
         "Cast": "Robert Pattinson, Zoe Kravitz, Paul Dano, Colin Farrell, Jeffrey Wright, Andy Serkis",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 114
+        "Like": 114,
+        "Title": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+        "Idmb": 7.9,
+        "Metacritic": 72,
+        "Tomatoes": 85,
+        "Revenue": 770.8
     },
     {
         "Name": "Romeo and Juliet",
@@ -164,8 +207,12 @@
         "Star": 8.3,
         "Directer": "Baz Luhrmann",
         "Cast": "Leonardo DiCaprio, Claire Danes, John Leguizamo, Paul Rudd, Harold Perrineau, Paul Sorvino",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 113
+        "Like": 113,
+        "Title": "Shakespeare's famous play is updated to the hip modern suburb of Verona still retaining its original dialogue.",
+        "Idmb": 6.7,
+        "Metacritic": 60,
+        "Tomatoes": 71,
+        "Revenue": 148.8
     },
     {
         "Name": "Men in black: International",
@@ -178,8 +225,12 @@
         "Star": 7.3,
         "Directer": "F. Gary Gray",
         "Cast": "Tessa Thompson, Chris Hemsworth, Liam Neeson, Emma Thompson, Kumail Nanjiani, Rebecca Ferguson",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 108
+        "Like": 108,
+        "Title": "The Men in Black have always protected the Earth from the scum of the universe. In this new adventure, they tackle their biggest threat to date: a mole in the Men in Black organization.",
+        "Idmb": 6.6,
+        "Metacritic": 68,
+        "Tomatoes": 66,
+        "Revenue": 244.5
     },
     {
         "Name": "Titanic",
@@ -192,8 +243,12 @@
         "Star": 9.4,
         "Directer": "James Cameron",
         "Cast": "Leonardo DiCaprio, Kate Winslet, Billy Zane, Bill Paxton, Gloria Stuart, Kathy Bates",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 120
+        "Like": 120,
+        "Title": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        "Idmb": 7.9,
+        "Metacritic": 75,
+        "Tomatoes": 87,
+        "Revenue": 2.187
     },
     {
         "Name": "Venom",
@@ -206,8 +261,12 @@
         "Star": 7.9,
         "Directer": "Andy Serkis",
         "Cast": "Tom Hardy, Tom Holland, Woody Harrelson, Michelle Williams, Naomie Harris, Stephen Graham",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 116
+        "Like": 116,
+        "Title": "A failed reporter is bonded to an alien entity, one of many symbiotes who have invaded Earth. But the being takes a liking to Earth and decides to protect it.",
+        "Idmb": 6.6,
+        "Metacritic": 63,
+        "Tomatoes": 65,
+        "Revenue": 856.1
     },
     {
         "Name": "Famous detective conan: Bride halloween",
@@ -220,8 +279,12 @@
         "Star": 9.7,
         "Directer": "Susumu Mitsunaka",
         "Cast": "Takayama Minami, Yamazaki Wakana, Koyama Rikiya, Furuya Tōru, Hayashibara Megumi, Yuya Atsuko",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 123
+        "Like": 123,
+        "Title": "During the wedding of Takagi and Sato, an assailant breaks and tries to attack Sato. But Takagi protects her while getting injured. The attacker escapes, but the situation is settled, although Sato is rightfully rattled by it all.",
+        "Idmb": 7.1,
+        "Metacritic": 75,
+        "Tomatoes": 77,
+        "Revenue": 10.9
     },
     {
         "Name": "Mr. Bean",
@@ -234,8 +297,12 @@
         "Star": 9.2,
         "Directer": "Peter Bennett-Jones",
         "Cast": "Rowan Atkinson, Matilda Ziegler, Robin Driscoll, Sally Grace, Matthew Ashford, Roger Sloman",
-        "Language": "English - Vietnamese subtitles",
-        "Like": 120
+        "Like": 120,
+        "Title": "Bumbling, childlike Mr. Bean has trouble completing the simplest of tasks in day-to-day life, but his perseverance and resourcefulness frequently allow him to find ingenious ways around problems.",
+        "Idmb": 8.6,
+        "Metacritic": 90,
+        "Tomatoes": 100,
+        "Revenue": 103.0
     },
     {
         "Name": "Always",
@@ -248,8 +315,12 @@
         "Star": 9.0,
         "Directer": "Song Il-gon",
         "Cast": "Han Hyo-joo, So Ji-sub, Park Chun-min, Kang Shin-il, Jung Jae-jin, Kim Jung-pal",
-        "Language": "Korea - Vietnamese subtitles",
-        "Like": 120
+        "Like": 120,
+        "Title": "A love story centered on ex-boxer Chul-min and a blind telemarketer Jung-hwa.",
+        "Idmb": 7.7,
+        "Metacritic": 75,
+        "Tomatoes": 78,
+        "Revenue": 19.4
     },
     {
         "Name": "On your wedding day",
@@ -262,8 +333,12 @@
         "Star": 8.9,
         "Directer": "Lee Seok-geun",
         "Cast": "Kang Ki-young, Ko Kyu-pil, Park Bo-young, Kim Young-kwang, Jang Sung-bum, Cha Yup",
-        "Language": "Korea - Vietnamese subtitles",
-        "Like": 119
+        "Like": 119,
+        "Title": "The movie The Most Beautiful Day is a very sweet 10-year love story of a passionate guy Woo-yeon and a girl who believes in 'fate for the first 3 seconds of meeting' Seung-hee. Sweet memories of first love are mixed with regrets about untimely love. How will Woo-yeon feel and act when holding the wedding card of the girl he loves the most",
+        "Idmb": 7.0,
+        "Metacritic": 72,
+        "Tomatoes": 75,
+        "Revenue": 9.7
     },
     {
         "Name": "Deadpool",
@@ -276,7 +351,11 @@
         "Star": 8.7,
         "Directer": "Tim Miller",
         "Cast": "Ryan Reynolds, Morena Baccarin, T.J. Miller, Brianna Hildebrand, Ed Skrein, Gina Carano",
-        "Language": "Korea - Vietnamese subtitles",
-        "Like": 117
+        "Like": 117,
+        "Title": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.",
+        "Idmb": 8.0,
+        "Metacritic": 79,
+        "Tomatoes": 85,
+        "Revenue": 783.1
     }
 ]

@@ -8,15 +8,27 @@
     margin-left: -15px;
     margin-right: -15px;
 }
-.label {
-    text-align: end;
-    padding: 45px;
-    h1 {
-        color: white;
-        margin-bottom: 10px;
+.banner-label {
+    position: relative;
+    .banner {
+        height: 100vh;
     }
-    label {
-        color: white;
-        font-size: 20px;
+    .banner-wrap-title {
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        h1 {
+            color: white;
+            margin-bottom: 10px;
+            text-align: end;
+        }
+        label {
+            color: white;
+            font-size: 20px;
+            text-align: end;
+        }
+        a {
+            text-align: end;
+        }
     }
 }

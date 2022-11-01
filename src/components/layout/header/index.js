@@ -4,34 +4,51 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
 import Logo from '~/assets/images/logo.png';
 import Image from '~/assets/images/image.png';
-import LoginButton from '~/components/button';
+import { PrimaryButton } from '~/components/button';
 import Account from './acount';
+import { Link } from 'react-router-dom';
+import { signIn } from '~/store/reducers/auth/actions';
+import { useDispatch } from 'react-redux';
 
 function Header() {
     const [login, setLogin] = useState(false);
+    const dispatch = useDispatch();
+
+    const handleLogin = () => {
+        dispatch(signIn());
+    };
+
     return (
         <>
-            <div className="wrapper">
+            <div className="header-wrapper">
                 <div className="container">
                     <div className="row">
-                        <div className="head">
-                            <img className="header-image" src={Logo} />
+                        <div className="header-head">
+                            <Link to="/">
+                                <img className="header-image" src={Logo} />
+                            </Link>
                             <ul>
-                                <li>Detail</li>
-                                <li>Theater</li>
-                                <li>New</li>
+                                <Link to="/event">
+                                    <li>Event</li>
+                                </Link>
+                                <Link to="/moviecorner">
+                                    <li>Movie Corner</li>
+                                </Link>
+                                <Link to="/film">
+                                    <li>Film</li>
+                                </Link>
                             </ul>
-                            <div className="search">
+                            <div className="header-search">
                                 <input placeholder="Enter movie name ... " />
-                                <FontAwesomeIcon className="icon" icon={faSearch} />
+                                <FontAwesomeIcon className="header-icon" icon={faSearch} />
                             </div>
                             {login ? (
-                                <div className="account-login">
-                                    <img className="login-image" src={Image} />
+                                <div className="header-account-login">
+                                    <img className="header-login-image" src={Image} />
                                     <Account />
                                 </div>
                             ) : (
-                                <LoginButton />
+                                <PrimaryButton label={'Login'} onClick={handleLogin} />
                             )}
                         </div>
                     </div>

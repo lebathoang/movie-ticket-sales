@@ -15,104 +15,104 @@ function Footer() {
         <div className="footer-wrap">
             <div className="container">
                 <div className="row">
-                    <div className="outside-box">
+                    <div className="footer-outside-box">
                         <div className="col-3">
-                            <div className="content-box">
+                            <div className="footer-content-box">
                                 <h2>Introduce</h2>
                                 <ul>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>About us</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Terms of use</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Operating regulations</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Privacy Policy</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-3">
-                            <div className="content-box">
+                            <div className="footer-content-box">
                                 <h2>Movie corner</h2>
                                 <ul>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Movie genre</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Movie commentary</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Movie blog</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Featured movies of the month</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-3">
-                            <div className="content-box">
+                            <div className="footer-content-box">
                                 <h2>Support</h2>
                                 <ul>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Feedback</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Sale & survice</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Theater - fare</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon className="icon-angle" icon={faAngleDoubleRight} />
+                                        <FontAwesomeIcon className="footer-icon-angle" icon={faAngleDoubleRight} />
                                         <p>Recruit</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-3">
-                            <div className="content-box">
+                            <div className="footer-content-box">
                                 <h2>Connect GALAXY CINEMA</h2>
-                                <div className="icon-box">
-                                    <FontAwesomeIcon className="icon-facebook" icon={faSquareFacebook} />
+                                <div className="footer-icon-box">
+                                    <FontAwesomeIcon className="footer-icon-facebook" icon={faSquareFacebook} />
 
-                                    <FontAwesomeIcon className="icon-youtube" icon={faYoutube} />
+                                    <FontAwesomeIcon className="footer-icon-youtube" icon={faYoutube} />
 
-                                    <FontAwesomeIcon className="icon-instagram" icon={faSquareInstagram} />
+                                    <FontAwesomeIcon className="footer-icon-instagram" icon={faSquareInstagram} />
                                 </div>
                             </div>
-                            <div className="content-box">
+                            <div className="footer-content-box">
                                 <h2>DOWNLOAD APP</h2>
-                                <div className="icon-box">
-                                    <FontAwesomeIcon className="icon-download" icon={faApple} />
+                                <div className="footer-icon-box">
+                                    <FontAwesomeIcon className="footer-icon-download" icon={faApple} />
 
-                                    <FontAwesomeIcon className="icon-download" icon={faGooglePlay} />
+                                    <FontAwesomeIcon className="footer-icon-download" icon={faGooglePlay} />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="border"></div>
-            <div className="botton-footer">
+            <div className="footer-border"></div>
+            <div className="footer-bottom">
                 <div className="container">
                     <div className="row">
-                        <div className="bottom">
+                        <div className="footer-bottom-flex">
                             <img className="footer-image" src={Logo} />
                             <p>
                                 <i>

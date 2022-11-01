@@ -1,0 +1,101 @@
+[
+    {
+        "Name": "The MarvelS",
+        "Id": 1,
+        "Price": 50,
+        "Image": "https://socialjunkie.com/wp-content/uploads/2022/05/themarvels_lob_crd_01.jpg",
+        "Category": "Act, Science Fiction",
+        "PremiereDate": "28 July 2023",
+        "Directer": "Nia DaCosta"
+    },
+    {
+        "Name": "Guardians of the Galaxy Vol. 3",
+        "Id": 2,
+        "Price": 50,
+        "Image": "https://2.bp.blogspot.com/-6pvPnf3cdic/Ym5N7QbtlBI/AAAAAAAAJOc/wLv5SGk5EFEihDg4mY2vXvXLAyAETuiEwCNcBGAsYHQ/s0/thumb_ve-binh-dai-ngan-ha-3.jpg=s500",
+        "Category": "Act, Science Fiction",
+        "PremiereDate": "5 May 2023",
+        "Directer": "James Gunn"
+    },
+    {
+        "Name": "Shazam! Fury of Gods",
+        "Id": 3,
+        "Price": 50,
+        "Image": "http://popcornsg.s3.amazonaws.com/gallery/1634429364-shazam-f.jpg",
+        "Category": "Act, Science Fiction",
+        "PremiereDate": "17 March 2023",
+        "Directer": "David F. Sandberg"
+    },
+    {
+        "Name": "John Wick: Chapter 4",
+        "Id": 4,
+        "Price": 50,
+        "Image": "https://photo2.tinhte.vn/data/attachment-files/2021/08/5594887_John_Wick_4.jpg",
+        "Category": "Act, Science Fiction",
+        "PremiereDate": "24 March 2023",
+        "Directer": "Chad Stahelski"
+    },
+    {
+        "Name": "The Super Mario Bros",
+        "Id": 5,
+        "Price": 50,
+        "Image": "https://m.media-amazon.com/images/M/MV5BMTk2MjkzNzIxNl5BMl5BanBnXkFtZTcwNDkxMTYzMQ@@._V1_.jpg",
+        "Category": "Cartoon",
+        "PremiereDate": "7 April 2023",
+        "Directer": "Rocky Morton, Annabel Jankel"
+    },
+    {
+        "Name": "Transformers: Rise of the Beasts",
+        "Id": 6,
+        "Price": 50,
+        "Image": "https://trendingnewsbuzz.com/wp-content/uploads/2022/07/Untitled-design-26-1.jpg",
+        "Category": "Act, Science Fiction",
+        "PremiereDate": "9 June 2023",
+        "Directer": "Steven Caple Jr."
+    },
+    {
+        "Name": "Indiana Jones 5",
+        "Id": 6,
+        "Price": 50,
+        "Image": "https://m.media-amazon.com/images/M/MV5BZjVkYzY4OWEtMjc2OC00YTQ0LWIwMmUtYTRlODc3ODBmZjcxXkEyXkFqcGdeQXVyMjkyODc0ODk@._V1_.jpg",
+        "Category": "Act, Science Fiction",
+        "PremiereDate": "30 June 2023",
+        "Directer": "James Mangold."
+    },
+    {
+        "Name": "Barbie",
+        "Id": 7,
+        "Price": 50,
+        "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0RVIoucELc0ixbvYolqpWeLinpJJchW_SEjn-sYpR_fDhaVOJHZgWpjDKgHEMt21qVIw&usqp=CAU",
+        "Category": "Humor",
+        "PremiereDate": "21 July 2023",
+        "Directer": "Greta Gerwig"
+    },
+    {
+        "Name": "Dune: Part Two",
+        "Id": 8,
+        "Price": 50,
+        "Image": "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        "Category": "Act, Science Fiction",
+        "PremiereDate": "17 November 2023",
+        "Directer": "Denis Villeneuve"
+    },
+    {
+        "Name": "Wonka",
+        "Id": 9,
+        "Price": 50,
+        "Image": "https://play-lh.googleusercontent.com/nJviG_JqwxnPJlIT9yA5cImb-dV3jXLpWlU-kk5VKYEdTFtonrui6UENnyqqkM6yMuav8WhF9U8QCiLa2mI",
+        "Category": "Humor",
+        "PremiereDate": "15 December 2023",
+        "Directer": "Paul King"
+    },
+    {
+        "Name": "Troll 3",
+        "Id": 9,
+        "Price": 50,
+        "Image": "https://wipy.tv/wp-content/uploads/2021/12/trolls-3-1200x900.jpg",
+        "Category": "Cartoon",
+        "PremiereDate": "17 November 2023",
+        "Directer": "Paul King"
+    }
+]

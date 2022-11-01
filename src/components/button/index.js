@@ -1,23 +1,26 @@
 import '~/assets/css/button/index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faCheck, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import Home from '~/pages/home';
 
-function LoginButton() {
+export function PrimaryButton({ onClick, label }) {
     return (
-        <div className="btn">
-            <button type="button">Login</button>
+        <div className="login-btn">
+            <button type="button" onClick={onClick}>
+                {label}
+            </button>
         </div>
     );
 }
-function BuyButton() {
+export function SecondaryButton({ label }) {
     return (
         <div className="buy-btn">
-            <button type="button">Buy</button>
+            <button type="button">{label}</button>
         </div>
     );
 }
 
-function LikeButton() {
+export function LikeButton() {
     return (
         <div className="like-btn">
             <FontAwesomeIcon className="hidden" icon={faCheck} />
@@ -27,9 +30,9 @@ function LikeButton() {
         </div>
     );
 }
-function BuyTicket() {
+export function BuyTicket() {
     return (
-        <div className="ticket-btn">
+        <div className="wrap-ticket">
             <button type="button" className="ticket-buy">
                 Buy Ticket
             </button>
@@ -37,6 +40,3 @@ function BuyTicket() {
         </div>
     );
 }
-
-export default LoginButton;
-export { BuyButton, LikeButton, BuyTicket };
