@@ -36,7 +36,7 @@ function Film() {
                             </li>
                         </ul>
                         <div className="film-border-bottom"></div>
-                        {film == true ? (
+                        {film === true ? (
                             <div className="film-row-wrap">
                                 {Newfilm.map((items, index) => (
                                     <div className="col-3" key={index}>

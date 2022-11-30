@@ -2,6 +2,7 @@ import { authTypes } from './actions';
 
 const initState = {
     loggedIn: false,
+    successful: false,
 };
 
 const authReducer = (state = initState, action) => {
@@ -10,6 +11,10 @@ const authReducer = (state = initState, action) => {
             return { ...state, loggedIn: true };
         case authTypes.TURN_OFF_LOGIN:
             return { ...state, loggedIn: false };
+        case authTypes.SUCCESSFUL:
+            return { ...state, successful: true, loggedIn: false };
+        case authTypes.LOGOUT:
+            return { ...state, successful: false };
         default:
             return state;
     }

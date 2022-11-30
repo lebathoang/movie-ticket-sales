@@ -75,7 +75,7 @@
             border-radius: 50%;
             width: 100px;
             height: 100px;
-            padding: 26px 0 0 26px;
+            padding: 22px 0 0 26px;
             span {
                 font-size: 30px;
                 font-weight: 600;
@@ -150,9 +150,11 @@
                     font-weight: 600;
                     text-align: center;
                     width: 115px;
-                    height: 38px;
                     padding: 0;
                     margin: 0;
+                }
+                .figure {
+                    color: #747474;
                 }
             }
         }

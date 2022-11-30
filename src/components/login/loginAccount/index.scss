@@ -1,0 +1,50 @@
+.border-error {
+    border: 1px solid red;
+}
+.text-error {
+    color: red;
+}
+.title-account {
+    font-size: 12px;
+    font-weight: 600;
+    color: #7c7c7c;
+}
+.login-wrap-input {
+    padding: 12px 0 12px;
+    input {
+        padding: 5px 10px;
+        width: 395px;
+        outline: none;
+    }
+    p {
+        margin: 0;
+        margin: 4px 0 -20px;
+    }
+}
+a {
+    text-decoration: none;
+    .forgot-password {
+        color: #7c7c7c;
+        font-weight: 600;
+        margin-top: 5px;
+        &:hover {
+            color: #f26b38;
+        }
+    }
+}
+.login-wrap-button {
+    padding: 5px 0 20px;
+    button {
+        width: 395px;
+        padding: 10px 0;
+        background: #f26b38;
+        border: 0;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+            background: #e26435;
+        }
+    }
+}

@@ -6,7 +6,6 @@ import Header from '~/components/layout/header';
 import Footer from '~/components/layout/footer';
 import './index.scss';
 import { Link } from 'react-router-dom';
-import Cartoon from '~/components/filmItem/cartoon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight, faHandPointRight, faCaretLeft } from '@fortawesome/free-solid-svg-icons';
 import BannerEvent from '~/shared/mocks/banner-event.json';
@@ -46,7 +45,6 @@ function Event() {
                                 />
                             </div>
                         </div>
-                        <Cartoon />
                         <div className="event-movie-selection">
                             <div className="event-title">
                                 <img src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg" />
