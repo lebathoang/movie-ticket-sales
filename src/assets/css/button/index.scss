@@ -76,6 +76,7 @@
     }
     .icon-cart {
         font-size: 15px;
+        color: white;
     }
 }
 // Cart button
@@ -111,5 +112,42 @@
             top: 6px;
             right: -10px;
         }
+    }
+}
+// time button
+.time-button {
+    button {
+        padding: 5px 15px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+}
+// cart shopping
+.cart-shopping {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    width: 65px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    .cart-icon {
+        font-size: 18px;
+        margin: auto;
+        color: rgb(255, 91, 91);
+    }
+    span {
+        position: absolute;
+        border-radius: 10px;
+        width: 16px;
+        height: 16px;
+        background: white;
+        color: rgb(255, 91, 91);
+        text-align: center;
+        font-size: 11px;
+        font-weight: 600;
+        margin-left: 24px;
     }
 }

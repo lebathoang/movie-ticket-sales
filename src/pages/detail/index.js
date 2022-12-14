@@ -9,9 +9,12 @@ import { faAngleRight, faChartSimple, faHeart, faHouseChimney } from '@fortaweso
 import FilmDetail from '~/shared/mocks/films.json';
 import Cast from '~/shared/mocks/casts.json';
 import { SecondaryButton } from '~/components/button';
-import Remix from '~/video/remix.mp4';
+import { useDispatch } from 'react-redux';
+import { getId } from '~/store/reducers/detail/action';
+import ReactPlayer from 'react-player';
 
 function Details() {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
     const { filmId } = useParams();
     const [filmSelected, setFilmSelected] = useState(null);
@@ -27,6 +30,9 @@ function Details() {
         }
         // neu k thi redirect router v6
     }, []);
+    const handleChangePage = (id) => {
+        dispatch(getId(id));
+    };
     return (
         <div>
             <Header />
@@ -86,14 +92,17 @@ function Details() {
                                         </div>
                                     </div>
                                     <div className="col-3">
-                                        {/* <img src={filmSelected.Image} /> */}
-                                        <video
+                                        <ReactPlayer
+                                            url={filmSelected.Video}
                                             width={266}
                                             height={350}
-                                            src="https://v16-webapp.tiktok.com/30d5f65179b4a07c769abe05d07265d5/6387c9e9/video/tos/useast2a/tos-useast2a-pve-0037-aiso/3ac9afe82de84ef187b801dfbcb1e470/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1500&bt=750&cs=0&ds=3&ft=4b~OyM3a8Zmo0_WpK64jVL36PpWrKsdm&mime_type=video_mp4&qs=0&rc=O2U4Ojs0ZjxmNDQ2aTwzNEBpM3huOWg6ZndoZjMzZjgzM0BjMmFiXjMtNS8xNWIxLWJgYSNsMmBycjQwZzRgLS1kL2Nzcw%3D%3D&l=2022113015233901024502202612339BEB&btag=80000"
-                                            controls
+                                            playing={true}
+                                            controls={false}
                                         />
-                                        <Link to="/theatre">
+                                        <Link
+                                            to={`/theatre/${filmSelected.Id}`}
+                                            onClick={handleChangePage(filmSelected.Id)}
+                                        >
                                             <SecondaryButton label={'Buy'} />
                                         </Link>
                                         <div className="detail-right-content">

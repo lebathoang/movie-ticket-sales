@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
 import Logo from '~/assets/images/logo.png';
 import { PrimaryButton } from '~/components/button';
+import { SixthButton } from '~/components/button';
 import Account from './acount';
 import { Link } from 'react-router-dom';
 import { signIn } from '~/store/reducers/auth/actions';
+import { openCartShopping } from '~/store/reducers/cart_shopping/actions';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import DropdownButton from 'react-bootstrap/DropdownButton';
@@ -17,6 +19,9 @@ function Header() {
 
     const handleLogin = () => {
         dispatch(signIn());
+    };
+    const handleCartShopping = () => {
+        dispatch(openCartShopping());
     };
 
     return (
@@ -60,6 +65,7 @@ function Header() {
                             ) : (
                                 <PrimaryButton label={'Login'} onClick={handleLogin} />
                             )}
+                            <SixthButton ticket={'0'} onClick={handleCartShopping} />
                         </div>
                     </div>
                 </div>

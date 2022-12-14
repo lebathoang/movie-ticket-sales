@@ -72,34 +72,29 @@
     {
         "casts": [
             {
-                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQcGryYB42K8sy5G-8STT-CxYlsZ0crclzQ&usqp=CAU",
-                "name": "Nomura Michiko",
+                "image": "https://m.media-amazon.com/images/M/MV5BZmU2MGU3ZTktNTVmYi00Njc5LWJhNTgtYTMxYThjYzZjYTljXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UX178_CR0,0,178,264_AL_.jpg",
+                "name": "Kakazu Yumi",
                 "figure": "Shizuka"
             },
             {
-                "image": "https://phim.hotakky.com/media/userfiles/_thumbs/250x/center/images/03-2015e/24329.jpg",
-                "name": "Oyama Nobuyo",
+                "image": "https://www.animenewsnetwork.com/images/encyc/P2147-2000351780.1481425003.jpg",
+                "name": "Mizuta Wasabi",
                 "figure": "Doraemon"
             },
             {
-                "image": "https://zingtv-photo.zmdcdn.me/thumb/165_165/avatars/6/e/6e52811d8abd5cefbb5444c73a0d6641_1425301217.png",
-                "name": "Ohara Noriko",
+                "image": "https://cdn.wikirby.com/9/94/Megumi_Ohara.jpg",
+                "name": "Ōhara Megumi",
                 "figure": "Nobita"
             },
             {
-                "image": "https://cdn.myanimelist.net/images/voiceactors/3/40739.jpg",
-                "name": "Tatekabe Kazuya",
+                "image": "https://www.animenewsnetwork.com/images/encyc/P39856-2238170111.1330010053.jpg",
+                "name": "Kimura Subaru",
                 "figure": "Jaian"
             },
             {
-                "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/KanetaKimotsuki.jpg/220px-KanetaKimotsuki.jpg",
-                "name": "Kimotsuki Kaneta",
+                "image": "https://cdn.myanimelist.net/images/voiceactors/1/55486.jpg",
+                "name": "Seki Tomokazu",
                 "figure": "Suneo"
-            },
-            {
-                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9QYCvy8j3trfD8BnIUDNTrZuBNE4qyjYijOo5WCdQW5gJDAnoLKewjAu7yVetadXvYyE&usqp=CAU",
-                "name": "Ryoichi Tanaka",
-                "figure": "Teacher"
             }
         ],
         "id": 3

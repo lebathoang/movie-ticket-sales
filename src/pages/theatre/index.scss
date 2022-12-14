@@ -23,18 +23,28 @@
 .booked {
     color: red;
 }
+.choose {
+    color: blue;
+    cursor: pointer;
+}
+.none {
+    cursor: pointer;
+}
 .hidden {
     display: none;
 }
-img {
+.theatre-img {
     width: 100%;
+    height: 100%;
+    position: fixed;
 }
 .theatre-wrapper {
     position: relative;
+    top: 670px;
     .theatre-first-main {
         position: absolute;
         width: 1090px;
-        bottom: 555px;
+        top: -555px;
         display: flex;
         align-items: center;
         padding: 0;
@@ -53,14 +63,6 @@ img {
         .theatre-wrap-time {
             display: flex;
             justify-content: space-between;
-            .theatre-items-button {
-                button {
-                    padding: 5px 15px;
-                    border: none;
-                    border-radius: 5px;
-                    font-weight: 600;
-                }
-            }
         }
     }
     .theatre-second-main {
@@ -68,7 +70,7 @@ img {
         width: 1090px;
         display: flex;
         position: absolute;
-        bottom: 0;
+        bottom: 245px;
         background: radial-gradient(black, transparent);
         color: white;
         border-top-left-radius: 15px;
@@ -89,7 +91,8 @@ img {
                 .theatre-row-one {
                     display: flex;
                     flex-direction: column;
-                    padding-right: 60px;
+                    // padding-right: 60px;
+                    width: 215px;
                     .theatre-row-items {
                         display: flex;
                         p {
@@ -103,41 +106,29 @@ img {
                     }
                 }
             }
-            .theatre-choose-card {
-                padding: 5px 0 35px;
-                .theatre-title-link {
-                    display: flex;
-                    align-items: baseline;
-                    padding: 5px 0 17px;
-                    label {
-                        font-size: 24px;
-                        font-weight: 700;
-                        padding-right: 50px;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 14px;
-                        p {
-                            margin: 0;
-                        }
-                    }
+            .theatre-checkout {
+                padding: 10px 0;
+                label {
+                    font-size: 24px;
+                    font-weight: 700;
                 }
-                .theatre-bank {
-                    .theatre-angle {
-                        font-size: 26px;
-                        margin-right: 10px;
-                        cursor: pointer;
-                    }
-                    img {
-                        width: 24%;
-                        margin-right: 10px;
-                    }
+            }
+            .theatre-price {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                padding-bottom: 10px;
+                span {
+                    padding-left: 10px;
                 }
             }
             .theatre-buy {
                 display: flex;
                 .theatre-account-ticket {
+                    display: flex;
+                    width: 115px;
+                    align-items: center;
+                    justify-content: space-between;
                     button {
                         border: 1px solid silver;
                         border-radius: 20px;
@@ -148,35 +139,17 @@ img {
                         color: white;
                         background: transparent;
                     }
-                    span {
-                        padding: 0 10px;
-                    }
                 }
             }
         }
-        .theatre-wrap-seats {
-            padding: 25px 0 0 20px;
-            display: flex;
-            .theatre-wrap-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-                .theatre-column-text {
-                    width: 15px;
-                    text-align: center;
-                    font-weight: 500;
-                }
+        table {
+            width: 95%;
+            margin: 10px 0 0 15px;
+            .text {
+                padding-right: 10px;
             }
-            .theatre-row-number {
-                display: flex;
-                padding-left: 10px;
-                .theatre-column-theatre {
-                    width: 31px;
-                    text-align: center;
-                    .theatre-seat {
-                        cursor: pointer;
-                    }
-                }
+            td {
+                text-align: center;
             }
         }
         .theatre-chair {
@@ -193,5 +166,65 @@ img {
                 }
             }
         }
+    }
+}
+// Check Out
+.checkout-wrap {
+    width: 450px;
+    height: 400px;
+    background: white;
+    position: fixed;
+    top: 100px;
+    left: 450px;
+    z-index: 9;
+    .checkout-close-button {
+        float: right;
+        margin: 15px 15px 0 0;
+    }
+    p {
+        font-size: 26px;
+        font-weight: 700;
+        padding: 30px 0 0 25px;
+    }
+    .checkout-wrap-bill {
+        padding-top: 10px;
+        .checkout-bill {
+            display: flex;
+            font-weight: 600;
+            justify-content: space-between;
+            padding: 0px 25px 0;
+            p {
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    .checkout-wrap-infomation {
+        padding: 5px 0 15px 0;
+        .checkout-input {
+            padding-left: 5px;
+            display: flex;
+            border: 1px solid silver;
+            width: 90%;
+            border-radius: 3px;
+            margin: 5px 0 0 25px;
+            p {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0;
+                padding: 0;
+            }
+            input {
+                outline: none;
+                border: none;
+                padding-left: 10px;
+                font-weight: 600;
+            }
+        }
+    }
+    .checkout-wrap-button {
+        width: 100%;
+        padding-left: 100px;
     }
 }

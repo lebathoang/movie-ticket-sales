@@ -20,7 +20,6 @@ function LoginAccount() {
     }, [email, password]);
     // handle login
     const handleLogin = () => {
-        console.log('naaaaaaaaaa');
         var check = true;
         if (!email.length) {
             setEmailError('Please enter your email');
