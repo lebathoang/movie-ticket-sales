@@ -2,7 +2,7 @@ import auth from './auth/reducer';
 import global from './global/reducer';
 import user from './user/reducer';
 import detail from './detail/reducer';
-import cart from './cart_shopping/reducer';
+import cart from './cart/reducer';
 
 const { combineReducers } = require('redux');
 

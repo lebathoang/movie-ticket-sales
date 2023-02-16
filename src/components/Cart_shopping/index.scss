@@ -1,73 +1,119 @@
-.cart-wrapper {
+.cart-wrap {
     position: fixed;
-    top: 100px;
-    left: 450px;
-    width: 400px;
-    height: 450px;
-    background: white;
-    color: chocolate;
-    border-radius: 10px;
-    z-index: 9;
-    font-weight: 700;
-    .cart-head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 8px;
-        label {
-            font-size: 24px;
-        }
+    top: -14px;
+    right: -37px;
+    z-index: 999999;
+    .dropdown-menu {
+        background-color: none;
+        border: none;
     }
-    .cart-product {
-        .cart-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 0 10px;
-            img {
-                width: 17%;
-                height: 80px;
+    .cart-triangle {
+        font-size: 50px;
+        color: #f0f0f0;
+        margin: 0px 0 -23px 218px;
+    }
+    .cart-wrapper {
+        background: #f0f0f0;
+        width: 400px;
+        height: 450px;
+        color: coral;
+        border-radius: 10px;
+        font-weight: 700;
+        .cart-head {
+            padding: 15px 8px;
+            label {
+                font-size: 24px;
             }
-            .cart-main {
-                p {
-                    margin: 0;
-                    font-size: 12px;
-                }
-                .cart-seat {
+        }
+        .cart-title {
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .smile {
+                font-size: 24px;
+                margin: 24px 5px 0 5px;
+            }
+        }
+        .cart-scroll {
+            height: 285px;
+            overflow-y: overlay;
+            .cart-product {
+                .cart-item {
                     display: flex;
-                    p {
-                        padding-right: 20px;
+                    justify-content: space-between;
+                    padding: 0 6px;
+                    img {
+                        width: 17%;
+                        height: 80px;
+                    }
+                    .cart-main {
+                        width: 220px;
+                        p {
+                            margin: 0;
+                            font-size: 12px;
+                        }
+                        .cart-seat {
+                            display: flex;
+                            justify-content: space-between;
+                            .row-seat {
+                                width: 41px;
+                            }
+                            p {
+                                width: 71px;
+                            }
+                        }
+                    }
+                    .cart-price {
+                        text-align: end;
+                        .close {
+                            font-size: 10px;
+                        }
                     }
                 }
+                .cart-border {
+                    border-bottom: 1px solid coral;
+                    margin: 5px 6px;
+                }
             }
-            .cart-price {
-                text-align: end;
-                .close {
-                    font-size: 10px;
+        }
+        .cart-checkout {
+            width: 400px;
+            height: 100px;
+            background-color: white;
+            box-shadow: 0px 0px 30px #0000007a;
+            position: absolute;
+            bottom: 0px;
+            padding: 0 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            label {
+                font-size: 24px;
+            }
+            .cart-checkout-item {
+                display: flex;
+                justify-content: space-between;
+                .ticket-count {
+                    padding-right: 45px;
+                }
+                span {
+                    padding-right: 6px;
+                }
+                p {
+                    margin: 0;
                 }
             }
         }
     }
-    .cart-checkout {
-        width: 400px;
-        height: 100px;
-        box-shadow: 0px 0px 30px #0000007a;
-        position: absolute;
-        bottom: 0px;
-        padding: 0 15px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        label {
-            font-size: 24px;
-        }
-        .cart-checkout-item {
-            display: flex;
-            justify-content: space-between;
-            .ticket-count {
-                padding-right: 45px;
-            }
-            p {
-                margin: 0;
-            }
-        }
-    }
+}
+html *::-webkit-scrollbar {
+    width: 5px;
+}
+html *::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+    border-radius: 10px;
+}
+html *::-webkit-scrollbar-thumb {
+    background: rgba(20, 20, 20, 0.5);
+    border-radius: 10px;
 }

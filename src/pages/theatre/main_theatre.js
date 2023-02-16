@@ -3,25 +3,28 @@ import './index.scss';
 import { FourthButton } from '~/components/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCouch } from '@fortawesome/free-solid-svg-icons';
+import { useDispatch } from 'react-redux';
+import { updateTicket, addTicket } from '~/store/reducers/cart/actions';
 
-function SecondMainTheatre() {
-    const [count, setCount] = useState(1);
-    const [row, setRow] = useState('A');
-    const [column, setColumn] = useState(1);
-    const [place, setPlace] = useState(1);
+function SecondMainTheatre({ item }) {
+    const dispatch = useDispatch();
+    const [count, setCount] = useState(0);
+    const [row, setRow] = useState(null);
+    const [column, setColumn] = useState(null);
+    const [place, setPlace] = useState(null);
     const y = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
     const x = [...Array(18).keys()];
     const booked = ['D9', 'C8', 'C10', 'B7', 'B11', 'C6', 'C12', 'D6', 'D12', 'E7', 'E11', 'F8', 'F10', 'G9'];
-    const disabled = count == 1 ? 'disabled' : '';
-    const [customerSeats, setCustomerSeats] = useState(['A1']);
+    const disabled = count == 0 ? 'disabled' : '';
+    const [customerSeats, setCustomerSeats] = useState([]);
 
     const handleLocation = (code, index) => {
         const char = code.split('');
+        setRow(char[0]);
         const last = char[2] == undefined ? '' : char[2];
         const column = char[1] + last;
-        const place = column * (index + 1);
-        setRow(char[0]);
         setColumn(column);
+        const place = char[0] + column * (index + 1);
         setPlace(place);
         if (!booked.includes(code)) {
             setCustomerSeats([...customerSeats, code]);
@@ -31,8 +34,24 @@ function SecondMainTheatre() {
             setCustomerSeats(customerSeats.filter((item) => item != code));
             setCount(count - 1);
         }
+        if (!customerSeats.includes(code)) {
+            dispatch(updateTicket(count + 1));
+        } else {
+            dispatch(updateTicket(count - 1));
+        }
+        dispatch(addTicket(row, column, place, item));
     };
-    const handleBuyTicket = () => {};
+    const handleAddCount = () => {
+        setCount(count + 1);
+        dispatch(updateTicket(count + 1));
+    };
+    const handleRemoveCount = () => {
+        setCount(count - 1);
+        dispatch(updateTicket(count - 1));
+    };
+    const handleBuyTicket = () => {
+        alert('Successful ticket purchase');
+    };
 
     return (
         <div className="theatre-second-main">
@@ -68,15 +87,17 @@ function SecondMainTheatre() {
                     </div>
                     <div className="theatre-buy">
                         <div className="theatre-account-ticket">
-                            <button type="button" disabled={disabled} onClick={() => setCount(count - 1)}>
+                            <button type="button" disabled={disabled} onClick={handleRemoveCount}>
                                 -
                             </button>
                             <span>{count}</span>
-                            <button type="button" onClick={() => setCount(count + 1)}>
+                            <button type="button" onClick={handleAddCount}>
                                 +
                             </button>
                         </div>
-                        <FourthButton label={'BuyTicket'} onClick={handleBuyTicket} />
+                        <div onClick={handleBuyTicket}>
+                            <FourthButton label={'BuyTicket'} />
+                        </div>
                     </div>
                 </div>
             </div>

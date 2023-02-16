@@ -29,10 +29,10 @@ export function LikeButton() {
         </div>
     );
 }
-export function FourthButton({ onClick, label }) {
+export function FourthButton({ label }) {
     return (
         <div className="wrap-ticket">
-            <button type="button" className="ticket-buy" onClick={onClick}>
+            <button type="button" className="ticket-buy">
                 {label}
             </button>
             <FontAwesomeIcon icon={faCartShopping} className="icon-cart" />

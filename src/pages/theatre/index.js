@@ -7,7 +7,6 @@ import Footer from '~/components/layout/footer';
 import SecondMainTheatre from './main_theatre';
 import FilmDetail from '~/shared/mocks/films.json';
 import { FivethButton } from '~/components/button';
-import CheckOut from './check_out';
 import CartShopping from '~/components/Cart_shopping';
 
 function Theatre() {
@@ -15,8 +14,8 @@ function Theatre() {
     const [filmSelected, setFilmSelected] = useState(null);
     const [time, setTime] = useState('16:00');
     const [active, setActive] = useState('16:00');
-    const cartState = useSelector((state) => state);
-    const cart = cartState.cart_shopping;
+    const shopState = useSelector((state) => state);
+    const cart = shopState.cart;
 
     useEffect(() => {
         const item = FilmDetail.find((film) => film.Id == filmId);
@@ -30,8 +29,7 @@ function Theatre() {
 
     return (
         <div>
-            {/* <CheckOut /> */}
-            {cart?.openCart ? <CartShopping /> : ''}
+            {cart?.cart ? <CartShopping /> : ''}
             {filmSelected && (
                 <>
                     <img className="theatre-img" src={filmSelected.ImageTheatre} />
@@ -44,19 +42,19 @@ function Theatre() {
                                         <div className="theatre-title">
                                             <label>{filmSelected.Name}</label>
                                             <p>Movie premieres begin {time}</p>
-                                            <p>2D</p>
+                                            <p>3D</p>
                                         </div>
                                     </div>
                                     <div className="col-6">
                                         <div className="theatre-wrap-time">
                                             <FivethButton
-                                                label={'16:00'}
-                                                className={active == '16:00' ? 'happen' : ''}
+                                                label={'17:00'}
+                                                className={active == '17:00' ? 'happen' : ''}
                                                 onClick={handleTime}
                                             />
                                             <FivethButton
-                                                label={'17:30'}
-                                                className={active == '17:30' ? 'happen' : ''}
+                                                label={'18:00'}
+                                                className={active == '18:00' ? 'happen' : ''}
                                                 onClick={handleTime}
                                             />
                                             <FivethButton
@@ -65,19 +63,19 @@ function Theatre() {
                                                 onClick={handleTime}
                                             />
                                             <FivethButton
-                                                label={'20:30'}
-                                                className={active == '20:30' ? 'happen' : ''}
+                                                label={'20:00'}
+                                                className={active == '20:00' ? 'happen' : ''}
                                                 onClick={handleTime}
                                             />
                                             <FivethButton
-                                                label={'22:00'}
-                                                className={active == '22:00' ? 'happen' : ''}
+                                                label={'21:00'}
+                                                className={active == '21:00' ? 'happen' : ''}
                                                 onClick={handleTime}
                                             />
                                         </div>
                                     </div>
                                 </div>
-                                <SecondMainTheatre />
+                                <SecondMainTheatre item={filmSelected} />
                             </div>
                         </div>
                         <Footer />
