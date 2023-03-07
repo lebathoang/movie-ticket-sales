@@ -7,15 +7,12 @@ import Footer from '~/components/layout/footer';
 import SecondMainTheatre from './main_theatre';
 import FilmDetail from '~/shared/mocks/films.json';
 import { FivethButton } from '~/components/button';
-import CartShopping from '~/components/Cart_shopping';
 
 function Theatre() {
     const { filmId } = useParams();
     const [filmSelected, setFilmSelected] = useState(null);
-    const [time, setTime] = useState('16:00');
-    const [active, setActive] = useState('16:00');
-    const shopState = useSelector((state) => state);
-    const cart = shopState.cart;
+    const [time, setTime] = useState('17:00');
+    const [active, setActive] = useState('17:00');
 
     useEffect(() => {
         const item = FilmDetail.find((film) => film.Id == filmId);
@@ -29,7 +26,6 @@ function Theatre() {
 
     return (
         <div>
-            {cart?.cart ? <CartShopping /> : ''}
             {filmSelected && (
                 <>
                     <img className="theatre-img" src={filmSelected.ImageTheatre} />
@@ -75,7 +71,7 @@ function Theatre() {
                                         </div>
                                     </div>
                                 </div>
-                                <SecondMainTheatre item={filmSelected} />
+                                <SecondMainTheatre film={filmSelected} />
                             </div>
                         </div>
                         <Footer />

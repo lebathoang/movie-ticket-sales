@@ -49,9 +49,9 @@ export function FivethButton({ onClick, label, className }) {
     );
 }
 
-export function SixthButton({ ticket, onClick }) {
+export function SixthButton({ ticket }) {
     return (
-        <button type="button" className="cart-shopping" onClick={onClick}>
+        <button type="button" className="cart-shopping">
             <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
             <span>{ticket}</span>
         </button>

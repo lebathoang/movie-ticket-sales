@@ -11,7 +11,6 @@ import { faCaretRight, faHandPointRight, faCaretLeft } from '@fortawesome/free-s
 import BannerEvent from '~/shared/mocks/banner-event.json';
 import Eventjson from '~/shared/mocks/event.json';
 import Member from '~/shared/mocks/member.json';
-import Icon from '~/shared/mocks/icon.json';
 
 function Event() {
     const [choose, setChoose] = useState(true);
@@ -44,6 +43,13 @@ function Event() {
                                     src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/h3_movie_selection.gif"
                                 />
                             </div>
+                            <Carousel>
+                                {BannerEvent.map((items, index) => (
+                                    <Carousel.Item interval={2000} className="event-slide-show" key={index}>
+                                        <img className="event-slide-show-run" src={items.image} alt="First slide" />
+                                    </Carousel.Item>
+                                ))}
+                            </Carousel>
                         </div>
                         <div className="event-movie-selection">
                             <div className="event-title">
@@ -114,18 +120,6 @@ function Event() {
                                 </div>
                             </div>
                             <div className="event-border-bottom"></div>
-                            <div className="event-footer-brand-slice">
-                                <img src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/brand-type-film-footer_ver2.png" />
-                                <ul>
-                                    {Icon.map((items, index) => (
-                                        <li key={index}>
-                                            <Link to={items.detail} className={items.class}>
-                                                {items.name}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>

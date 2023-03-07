@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
@@ -17,7 +16,7 @@ function Header() {
     const loginSuccessful = useSelector((state) => state);
     const successful = loginSuccessful.auth;
     const countProduct = useSelector((state) => state);
-    const product = countProduct.cart;
+    const product = countProduct.cart.ticket;
     const dispatch = useDispatch();
 
     const handleLogin = () => {
@@ -65,8 +64,8 @@ function Header() {
                             ) : (
                                 <PrimaryButton label={'Login'} onClick={handleLogin} />
                             )}
-                            <SixthButton ticket={product.count} />
-                            <DropdownButton>
+                            <SixthButton ticket={product.length} />
+                            <DropdownButton title="">
                                 <CartShopping />
                             </DropdownButton>
                         </div>

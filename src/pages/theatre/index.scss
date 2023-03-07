@@ -91,7 +91,6 @@
                 .theatre-row-one {
                     display: flex;
                     flex-direction: column;
-                    // padding-right: 60px;
                     width: 215px;
                     .theatre-row-items {
                         display: flex;
@@ -120,25 +119,6 @@
                 padding-bottom: 10px;
                 span {
                     padding-left: 10px;
-                }
-            }
-            .theatre-buy {
-                display: flex;
-                .theatre-account-ticket {
-                    display: flex;
-                    width: 115px;
-                    align-items: center;
-                    justify-content: space-between;
-                    button {
-                        border: 1px solid silver;
-                        border-radius: 20px;
-                        width: 38px;
-                        height: 38px;
-                        font-size: 21px;
-                        font-weight: 700;
-                        color: white;
-                        background: transparent;
-                    }
                 }
             }
         }

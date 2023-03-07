@@ -1,21 +1,15 @@
 export const cartTypes = {
-    UPDATE_TICKET: 'UPDATE_TICKET',
     ADD_TICKET: 'ADD_TICKET',
     REMOVE_TICKET: 'REMOVE_TICKET',
 };
 
-export const updateTicket = (numberTicket) => ({
-    type: cartTypes.UPDATE_TICKET,
-    numberTicket,
-});
-export const addTicket = (row, column, place, item) => ({
+export const addTicket = (code, filmDetail) => ({
     type: cartTypes.ADD_TICKET,
-    row,
-    column,
-    place,
-    item,
+    code,
+    filmDetail,
 });
-export const removeTicket = (payload) => ({
+export const removeTicket = (code, filmDetail) => ({
     type: cartTypes.REMOVE_TICKET,
-    payload,
+    code,
+    filmDetail,
 });
