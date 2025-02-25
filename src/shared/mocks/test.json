@@ -1,0 +1,247 @@
+[
+    {
+        "id": "Chris_Evans",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Chris_Evans_-_Captain_America_2_press_conference_%28cropped2%29.jpg/181px-Chris_Evans_-_Captain_America_2_press_conference_%28cropped2%29.jpg",
+        "name": "Chris Evans",
+        "figure": "Captain America",
+        "code": 1
+    },
+    {
+        "id": "Robert_Downey_Jr",
+        "image": "https://static1.dienanh.net/upload/202107/338185a5-21c5-40bc-b82a-bc164eac2e92.jpeg",
+        "name": "Robert Downey Jr",
+        "figure": "Iron Man",
+        "code": 1
+    },
+    {
+        "id": "Chris_Hemsworth",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Chris_Hemsworth_by_Gage_Skidmore_2_%28cropped%29.jpg",
+        "name": "Chris Hemsworth",
+        "figure": "Thor Odinson",
+        "code": 1
+    },
+    {
+        "id": "Black_Widow",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Scarlett_Johansson_by_Gage_Skidmore_2_%28cropped%2C_2%29.jpg/640px-Scarlett_Johansson_by_Gage_Skidmore_2_%28cropped%2C_2%29.jpg",
+        "name": "Scarlett Johansson",
+        "figure": "Black Widow",
+        "code": 1
+    },
+    {
+        "id": "Mark_Ruffalo",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTctA-lBEMC7pysTU61v9dzhN74SDMU5-gbLg&usqp=CAU",
+        "name": "Mark Ruffalo",
+        "figure": "Hulk",
+        "code": 1
+    },
+    {
+        "id": "Jeremy_Renner",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_k-dpqUTl3apYe0pk6oiDdXytdeG8Woyyg&usqp=CAU",
+        "name": "Jeremy Renner",
+        "figure": "Hawkeye",
+        "code": 1
+    },
+    {
+        "id": "Sam_Worthington",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToX5eoBWANwi5x6bM-wAysXNnaAIgmu-x7FA&usqp=CAU",
+        "name": "Sam Worthington",
+        "figure": "Jake Sully, Tommy",
+        "code": 2
+    },
+    {
+        "id": "Zoe_Saldana",
+        "image": "data:image/jpeg;base64,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",
+        "name": "Zoe Saldana",
+        "figure": "Neytiri",
+        "code": 2
+    },
+    {
+        "id": "Sigourney_Weaver",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sigourney_Weaver_by_Gage_Skidmore.jpg/1200px-Sigourney_Weaver_by_Gage_Skidmore.jpg",
+        "name": "Sigourney Weaver",
+        "figure": "Grace",
+        "code": 2
+    },
+    {
+        "id": "Giovanni_Ribisi",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTk2MDAwMTQ5OV5BMl5BanBnXkFtZTcwNjY0MzY1Mw@@._V1_UY1200_CR144,0,630,1200_AL_.jpg",
+        "name": "Giovanni Ribisi",
+        "figure": "Parker Selfridge",
+        "code": 2
+    },
+    {
+        "id": "Michelle_Rodriguez",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Michelle_Rodriguez_by_Gage_Skidmore_2.jpg/250px-Michelle_Rodriguez_by_Gage_Skidmore_2.jpg",
+        "name": "Michelle Rodriguez",
+        "figure": "Trudy Chacon",
+        "code": 2
+    },
+    {
+        "id": "Stephen_Lang",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEKGRGw36kMnh4o8MMHShU--lpq7crgg9J2Q&usqp=CAU",
+        "name": "Stephen Lang",
+        "figure": "Đại tá Miles Quaritc",
+        "code": 2
+    },
+    {
+        "id": "Kakazu_Yumi",
+        "image": "https://m.media-amazon.com/images/M/MV5BZmU2MGU3ZTktNTVmYi00Njc5LWJhNTgtYTMxYThjYzZjYTljXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UX178_CR0,0,178,264_AL_.jpg",
+        "name": "Kakazu Yumi",
+        "figure": "Shizuka",
+        "code": 3
+    },
+    {
+        "id": "Mizuta_Wasabi",
+        "image": "https://www.animenewsnetwork.com/images/encyc/P2147-2000351780.1481425003.jpg",
+        "name": "Mizuta Wasabi",
+        "figure": "Doraemon",
+        "code": 3
+    },
+    {
+        "id": "Ōhara_Megumi",
+        "image": "https://cdn.wikirby.com/9/94/Megumi_Ohara.jpg",
+        "name": "Ōhara Megumi",
+        "figure": "Nobita",
+        "code": 3
+    },
+    {
+        "id": "Kimura_Subaru",
+        "image": "https://www.animenewsnetwork.com/images/encyc/P39856-2238170111.1330010053.jpg",
+        "name": "Kimura Subaru",
+        "figure": "Jaian",
+        "code": 3
+    },
+    {
+        "id": "Seki Tomokazu",
+        "image": "https://cdn.myanimelist.net/images/voiceactors/1/55486.jpg",
+        "name": "Seki Tomokazu",
+        "figure": "Suneo",
+        "code": 3
+    },
+    {
+        "id": "Matsumoto_Rica",
+        "image": "https://zmp3-photo-fbcrawler.zmdcdn.me/avatars/8/a/a/5/8aa5e1a3b5cf496508f47ea0e18654d6.jpg",
+        "name": "Matsumoto Rica",
+        "figure": "Satoshi",
+        "code": 4
+    },
+    {
+        "id": "Miwa_Akihiro",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Akihiro_Miwa_%E7%BE%8E%E8%BC%AA_%E6%98%8E%E5%AE%8F.jpg",
+        "name": "Miwa Akihiro",
+        "figure": "Arceus",
+        "code": 4
+    },
+    {
+        "id": "Sarah_Natochenny",
+        "image": "https://images.sr.roku.com/idType/roku/context/global/id/4282ad4878745f9c92498ae345c7b395/images/gracenote/person/assets/537288_v9_aa.jpg/magic/396x0/filters:quality(70)",
+        "name": "Sarah Natochenny",
+        "figure": "Staraptor",
+        "code": 4
+    },
+    {
+        "id": "Otani_Ikue",
+        "image": "https://m.media-amazon.com/images/M/MV5BZjJiNjBmZGMtNGUwNy00NmRhLWI4YjUtYmZhNGI0ZDc2ZmNhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTEzNjA2NzM@._V1_.jpg",
+        "name": "Otani Ikue",
+        "figure": "Pikachu",
+        "code": 4
+    },
+    {
+        "id": "Kitano_Kie",
+        "image": "https://media.gettyimages.com/photos/personality-kie-kitano-attends-press-conference-of-nippon-tv-program-picture-id638371208?s=612x612",
+        "name": "Kitano Kie",
+        "figure": "Sheena",
+        "code": 4
+    },
+    {
+        "id": "Emily_Bauer",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDUzZmE5NjctYTMxMS00ZjAyLWJiYjktZmJjNTEzMzRiZmJjXkEyXkFqcGdeQXVyOTQyMTEyNjk@._V1_.jpg",
+        "name": "Emily Bauer",
+        "figure": "Dawn",
+        "code": 4
+    },
+    {
+        "id": "Yoko_Hikasa",
+        "image": "https://i.discogs.com/RmjbhBzjhJvR1Y4Zxj4MyCqbvgctxSJMtCY9cltMbE4/rs:fit/g:sm/q:90/h:853/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI1MDA2/MTUtMTQ1NjQ2MDkz/Ni03NzIyLmpwZWc.jpeg",
+        "name": "Yoko Hikasa",
+        "figure": "Asakura Yoh",
+        "code": 5
+    },
+    {
+        "id": "Megumi_Hayashibara",
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFhYZGRgZGhwYHBgYHBkYGRoaGRwaGhgaHBkcIS4lHCErIRgaJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHxISHjQrISs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAQgAvwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQMEBQYHAgj/xAA9EAABAwIDBAgFAgUEAgMAAAABAAIRAyEEEjEFQVFhBiJxgZGhscEHEzLR8FLxQmKSwuEUIyRyM4JjotL/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAhEQEBAAICAgMBAQEAAAAAAAAAAQIRITEDMhIiQVFxYf/aAAwDAQACEQMRAD8A1NCF0USRBCMFEgEB05EgUEAEEUphtjatPDUzUqOgbhvceAG9K0SbPKjw0S4gDiVXNp9NsLRtnzu4Mv4kaLMek3SytiXulxaybMabAczvKq1SrzhLdvTWYSdtZq/E6kDAYY43HlCm9idNcPiDlLgx2tzY9hPusEc7euWPIvMJ/G/0r8f49A4vpxg2GPmZjvyAu01vojwPTbB1DAqZTweMqwplcxrbl9102txv+cVFuTSYY16VpVGuAc0gg7wZCUWCdHuk9bCPBYczDqxxMEcuBW07C2xTxVJtWmbGxB1a7e0qsct9s8sLP8SQQQCBVMwKJGiKAMrkrpAoNwVyV0USCdokcIIAkYQRoAFEgURKAZ7V2izD03VahhrR3k7mjiSsM6S9IamLque4w0SGtGjRwHud6m/iLt416xpMPUYS0cC7Rzvb91SnmLcFPbbGfGEqr4sE39Uq4LhzFU4K8kXropUUSV3/AKU6p3KFMLSTHQuw9c5CunM9ErpU27a9WToX0kdg64cSflv6r28tzu1voqyGo2Hjv/PzsUZRUu+K9QUagc0OaQQQCCNCDcELpUD4V7cNSi7DPPXpXbzYTp3H1C0BVjdxjlj8boRQKCCaQQKMIigOSiK6QKAMokZCEIAIIIIAiofpRtD5GGe8fURkb/2dYHu17lMFUr4j4iGU2cXFxHYIHqlelYzdZXiGy953Nt5JhVZ91KOacrjxd7wmFYST2geFz6IxjXLo0pNkmU6oUJvCFGlDZ5ephTeGw1mt7Psozy0vx47J0NnDLcax5qQbs4FgsNI8DCfjDwB2jyn7J9Qw3UdbSfQH3XLctt+lCq4W5t+TCZYinljthWIUZc/kQO8lxUXtqlELfHLnTPLHjaJLr9qJiFYImm4PH1Wt6YztZOiO0jhsVTqT1S4Ndza6zvWe5egGmRK8z0joV6F6MYv5uGovmSWAHtbY+inC86PzY8SpRBGQiWjnG1AoNRlAclEjIRFAdBGgggCRFBAoAis7+I7/APcYODCfP/C0UrNviY3/AHWHdk9Cfulk0w9lDxL4bHf4AqPqu4cSfL/CWxNQSRwG5NmsLiAPyBJSl1Glm6d0SMguBpryB+6slFzC5mVwNwLEfnBQ+HwtPKMxvcX3GQPbzVm2fgKL2gsy5hB6trjRY+SytsZcT97JIA0Bj+oGPVMsTtDI14uZggDm2P7VZ6eAzNTCpspua41t3a/fxWOtD5bUekys4ODWgS7MZ7DHlKYbRwFWesQbT4aq2bZxJY176bZaw5SR+q8N019N5US7E1Xta805aQbt3A8ZAv46LSZZd6mhxeNqlVZAE8E2aLRwKuOO2JLW5Qdw07VVq1EsdlIjctcc5kjLHRTDGy3L4cPnBtHBzlhmDFjyW0/C584Zw4VD5hpROMk584LsiRoLVzCCMol0UByUSNEUB0iRoQgCQRokARWf/E1n/jP8r/KPutBhUv4l0Josf+lx84+wSy6X4/aMdqHrdx8pUpsjZ7nluQdbrezR5yoisIfyn1stW6A7KAptrEatGXznzJWWd44dGNk3aj8F0Gaym4VH9dw1gEtsQQ2dJBKV2V0VFJzQx77akxBB1Bsr45i4c4BRbbxSl1zCeGw2RgHJNqtIEqUGiYVjBUZcFjTelsxjQA1rYG6I9NUp/oxwHcErQxANku5yO1bqMq4NpERyWWdPtnClUa4aOkd4j7rXnhZ/8VKEUqL/AP5CP6mE/wBqfjn2gyy4Z9gN/wCb1s/wub/xn/8Af+0LGMG3871u/wAO6GTBsMXcXHzst9fZOV+i0oAIIBaOYcIiuiuSg3KJdFEgnUokJRIA5QRI0AFCdL8J8zDPbEkDMO5TYSeKZLHDiCllNxWN1dvNmOZfsMeO9a18NMXnwYYfqp1HsPec7fJ0dyzHbFDJUe3cHEd02PorP8Ldo5Kz6Tj/AORsif1sn1aT/Sst7xdGU5ai9yjKry54aOMnsCkKoTCpiKdCX1Hhg4ut+XKxvNOcJB1ciRltGtoUTiscQbNknja3anj8W91m0XkEa2A1A3nmFH1n1RIFIkB2XdrbeTpcXTymxjCgeXDMLHgnbKllD4rH1KbM7qbQYs2SHEzlygAG6e7Ne97A57PluIksmcs3iQs+lU7zKl/FIf8AGZx+a2P6Xq7hqzX4pY+X0qAP0gvd2u6rPLN4rXCfaM8ulKwTZeBzhejtiYX5dCmz9LGjvgSsA6L0M+IY06Zvz0XoumIA7F0T2Z536yFESCCpk6K5KNEUGJEjRIAI0QRoIAjRIIABc1jDSeSQxu0aVEZqj2sHM37hqVAbT6Y4XI9rKmZ+UwA1wkxAuQj82cZH0hcDUed2ZwJ5Fxj85KO2ZiXMe17TlexwIP8AM3Q9+neltpPl55/e6j3Pgh3ce0b1jOnXW89HttMxdFtRljo9u9rxqPzcQneIwjKkte0OaQQQRIg9qw7ZO3auFq/NpXB+thnK8ex4FbB0c6SUMYzMx0OH1MdZ7TzG8cxZTljrlneKfZ304aHw0WGbgItm7t6YYvHvIIztbpdoki99VMvphwg3TJ2zmzoleV42fsRGFwwcQ8lzyJ6zzJuZIbwE8FKtMJRtEBNcZim02yT9ysaq35UltjazMNSfVebNGm9x3NHEk2WIbRx769R9Z/1vM20E2DRyAgKz9Pcc+oxrnWbnAa3cLOvzKpzTMLp8U+u2dn20n+i1RrKjHvMAOHrl957lvGF2pSeAWvaZG4rzkKmVwGtvP8KsWG6SUqUAYZuaB1s5HfAF095S8fozxln+N4Y8HQrsFZj0X6cNqVW0ak0w76XtdLJ4OnTtWmUyIsZHHitJv9c9miiJGiTAkSNEgAjRIIIT3hoLnEAC5JsAql0p6VfLYW4dzXODZLmw4Ds3Sm3TjaznU3U6ZgA3IOpHss2w2KOdwnqhpJBIN+RGq1ww/aVv8SG1cQalJ1Zri90XLjJ566KvYesAwD+IyTG7hKe7PcQ99IHqPY430HZ5KIonK8s7QecaK85NDG6pTFvv3ApGk25B3pxjxBadxEJFjZHMGPsuOzUdcu66/wBKcmYaD3T/AKJ4k08Q14MXg8YPNOsBh89NzRrBkdkFMNl0oeDzj7KLlvGxp8eY27B40lom/NdVMUeCgtg4rMwA6qTqOWPyumdmqKriiofEtLyZT97ZTeqQ0Soy5XGfdP3gZGDiXeUKsYaDCnek5+ZUc7cB5KCwoseyPH9l1eP0RdzJzUd1+9dY4aHkuagv4JfENkBadWJvMpPZ9VweCNyuWxekNei9pD3ZQfpzEsjeMpVU2czLLt2ik6LrC94uDzW0xljG1vGxds08SwOY6/8AE3e0/bmpGVh2x9pvo1GvaSD+eK1vYO2W4lhIEObAcN19CDwUZY6JKlEhKCQBNNq4n5dJ7t8QO02TtQHS8kU2EbnXHcnjN3Sb0z7aeKLXgn6M0P5BwhpPJVnHYPI8kASScreAG8qy7RYKlN4iHFpHaq7h6vzW3BzsEPnUtAgEe66qnElmltJ43k03Ebswie7VReJpljyHajwM71NUqYcx9PTNcHg4XTXa4zspv3lsf029lOXW1TsnWZmY08JB703ywdd3nuTjZ5lpH7fkpxUw2Yacuzj6LC47rfHLiHmw6oY9s/Sfwp4cAGVqjJjN1meOZv8AcPBNti4Uva4XlvWB7NfYqYqUi9ocARUYIPZvE+BHYuPOfG2OrG7m0jsolkEaGD2Kwsq5gFGbNYH02kCC0AeCkKbI3LHVTl2N8qG2q8/SFYmi0wo1+ALjJ4ouKZWd9IhkblAu7UqDDIbHP0FlZ+mDAKjQI0/b3VdLJ/PErt8WP1kTledmb2pxUbLWwLn9lxWHW7k8Y3TkP3Wlx5RLxXDWZWhvNOMA3rGey6JmHLin1KhuIut5GFpx8sBXLoFi8tUsmz2+bbjylUGtiS52RkwLF3PgPup3YmKNF7HjVt47NyWWO4W2yIJvs/FtrU2VWfS9ocO8JwsFOlX+lruowcSfb7qfVa6WuuwcneyvD2ib0oOLpPY8Pabb27o5cCofH4brirTIDhu3O4gq112ghV7aNAsnLcbxP5BXV2iI1lYEh4blhwD2HVpPslNoUR8sDg55j/3KYV8TlPWuOO8fyn2Uk85mNO45vMkpfhorZ5hxEaqZwzZEfllD4YAPF4upvDN6xG7lzCiYquWlh6GYIOqvZO4G3gVPbQ2Z8moHAdRwyjh39noofoZWAxLeDm5eUxPstIrUGvaWuEgrl83jlta4Z2KdgKeR7gNDfx/bzKfNp3TitshzXSw5hwMAhJ1AWGHCDquW4XHtt8pl07qsyFs6FNMdVMEMbLtyf1mOqEBoiLE7vyyjektcYfDuDDL39TNv62scLSrx8dyy1OkXOYz/AKzDaJL3uc4ySY3aD0CZPAAJ4CI/O5PnxciBwGp5pnjtA2T395Mei9DHCYzUZXO5Xk0wVPO4k9qk6eGvHH3XOysNbS7j4BTtGkJLosBZOYzSLkZUsMASBo0Ad+9NtpYjKMrfq0ka33DmjxO0QxjoN3OMd2/uXWzaYyh77W1NzmPAcVWkk9n4UsEv1O7endWXdVtuKJ7ybgQ3zPad3YEdBwFrd0+wS0bYNgUwzDUWt0FNvpfzUlKiejdTNhqZ/ljwJClFy3tbtUjpPiD/AKlzDoGMc3mDMx3q7lUfpyB81mYH6OqRYgyZv7b1p4vZOXSEqv7CovGk3t4X8kpiDFy6RxLb+IUdWrA/S8HlI94K6bGcQW1adiQDzA//ACU+wT5wzN8WPiVziaZcIdEdseCYbKdldUpnSQQPX2Ufqyhs/wD9pU3SjMN8jd+c1C4hvW/J7lM4d4IYfva3FOCp3o+4tr076PIjuK1hhkSse2dUy1GkXh7Tx3iTK1nB1JaFh5fY8ejhyY7SwmcNAsQ4HPvaN8cSnxSdQWhZ63NU96N3vAED8PErOunmJJqNYD9Dcx/7O/wPNX9zgAXmzWgmeQ3rJtq4n5tVz3QJcXda9rZRHZA7lfix3dlUfcRpoTeb/hUe+XvMbzHd+CFJYmoAwmbu07N1vzVJbGoS/MdBYWXR2SWw2GgQN1lxtTGimwgGLQntZ4ayVSNuYwvMA707dFJsjgw6o+1xO/QCZ8yrO3COIGZ0br6xwa0GyYbJo/KYHHfraSPRTgxTIsD2xHmiTUFpu/DtaBqYiJgAdjQg10nQnuAHgl87d0JEvupojTuiOJz4cN/QSz0d/cp1UT4e7VDnVcMfqaQ8HiCAHeFleZXJlNZVpCsKgdIcQKlWoDoxwYO4CfMlX6VmO0ah+bVAADs7s08ZMGOxbeGbqMujGpS/mEc93fuUdUyaE5uTet7J/WY4iC5h5ER6Jo5hboQI3fgBXSziNr7Oab5S0cJ9lGYmkKb2OBEHqnjyU1iKjjJsexQm1GEtsLyFFaFMREC6f7PeMg5EWtxUMa2Zg10/IUhszEWLZ1CIE9QqXsOfC4WrbNqy0cwD4rJKNSYm1jcXlaVsWrmpMcP0t8hBWXmnVGKwl6TIlcsdK7LrLKKVzprjflYYtGr+rrHV1d5W71mDBvMCeBOnEwrB022p82vkaZDOo2L3MZzHb6KADw1syZ+ke66MMdRNMsY+SRAtAAAi/wBlMYCmWtAEXuSVGYWnL76anuM704x2NcGkN8irn9F/hLbuOgZAZVXyF7wPyN6XxFQkpxsURUzHs8bKPa6PqLIzCsLG2a4wNQDp2pxTptBseVrf4QoUm/pCWFMXtotKzN6lAapvVo6fdP3iBySFRuiVOJvoFs3/AJBrCeq05jxzWA9+5aRKzPoTtMsxZon6ajIHDM2SD4SFpWZcnk9mk6LKi9MMK1uIDwILmgnmRI9AFelUembOuw7i0+LT/lX4vYsulSxPUILW23mJhMmOa5zr3kWT574F+KaYmmwkHQm2YW8eK6mZHF5WmAFE45gDS6L7lIYh7hM9bdI91G4l8tMxPBSqIRjiLbkvga2V357IV6BF01Kz5hrJSxMWN9/54rQeiO0WupZJu1xHcbj18lkTMQdD+dhUlszbj6Lrdh3T4b0Zz5Y6E4btRxNlHdJttChQc4HrkZWjmd/dr3LPaHxAc2AWAxvk+ihtt9JX4l8uAAaIaAZHasscbvlVoxUJJc4z4GZ1mJlcYjEgkATblHpqmTcbv8BYjmSm4xXWnnp9yujZaSnzgxusTwUVisSXHU95RYjFSdLdibl0qcqIICSpLZrYdH6rfbzTXDU5T3COGcN7fT9k8cf0rVmwTpEGxCcufBIPAHumEyzghrgYcNd3kjdiBmFx9Bv4R91dQe1h1SmTjLQUq6uCNRfgmFPEAMud0+yVhxLdDKGbGtd+gOP/ANSPUrUZVD+HWHk1ap1s0cp6x9ArzK4/Ld5NZ0eSqr02dlFNx0OZvfYj3VnVZ6dtBoMMwRUEcNCTPgr8ftEZdKVVxLMpEi5aP6jH3UdiKgDHZTOU5gf+ph3lKVxOa30kA5rTpz8fJMatQlk5GmWkmOBBJmQuqohyazZeOQI8Uyc4cB2pq1m/KdLweMEb+xEbAiHBJUAsDgZOhlRNVm/jopllOCW7iEhiaE3FwBHYnljuCVFQUUlKlsLhwWWjcm6DWFG0JZgRIHAaUCwpbIumsm/cU9Ai2mUvTw57Uo0gaovmEcuSrUBR7w0aXS+yqUvE70lTo/xO7glsLVcyo29jAjtsqgTzWuaIJB4T6Sm1SnJIyt0B8QRw4hP6NS0Fsx2EXSNaqMxsbgDThJBHiiojgtixY2e3/CjsjnEtytET66eqkq1ebZT5D34phXqEcLTOkmTySqovPw9ePl1G/wAQeDwsWgC3cVcQVnfw9xA+Y9s3LBpyI+60AFcXk4yrSdH0qtdM39SmInrE+Df8qxFVTpthMVWDGYenmADnOdLBeLNGY8vMK/H7ROXSl4upDHkC5EDTfafVMcRVAY5sRaBI7N/YpWl0Gx1RhL3ZHahrjv4HIYHdKY4zobjmMJaW1I+prDEd7socum54pkMG1m5deA7h+yTe9nELg7OxoB/2KkAZichIjjOh7kxNWrpkdaP4Xb9N29Hyh6SzMO6JtBuPskKrPFSeHOZotqBbuXNfDA8juK10jaEezNqmj2QpWtRjW3PcmzmblnlFwzplqdNpgpF9BJse5vYpCSbSCb1IY/kV3SxUro5XXMJwEfqOi6LAy7rncEH4oNs3xSTAT1imC2f+IpuKl8x7B2rmpUzOyjRDLLwBuStC37N6K4+oxlRga5j25g4vboNJkSCfyFw7oxtKJ+Q6xjWnPcM1xzWodBHh2Bo8g5vg9wVgyrK+Synpiruhe0jByMvrL2dXtt6Skqfw9x7s05GxpLz1uzKLd621wXBCm+SnpmvR/oRVw1Rlf5wzAQ9gYYIOrQ4mTx01AVylSdRkiOKjHNgkcFjld3Zw9lL4cSmspxhXXhOAu5nHwSD6LSOsBG4bku8pEiblVSI1aebckn0GtabDRO00x7opvP8AK70KAyV72tcesNSk3VWO0cFEPokmcyL5McjyXcy0k6zZHJRlYhqTrF2hJA5JM4dp0JPqpu6qcA+u1NnVWrt2FjcuTRO5qWj2Sc+UTQUsKB3rqzUtBxTp6yuatcuOVqRrYguMBL0aeUc0d8QOmNDB7pTAsuXJOpeycgQ2E9chrfwrxebDPZvp1D4PAcPPMrwsz+DsxiT/AAywDth8jwhaWSubP2pwTikyu3LhyhTlQ1R5kzrKmHKGxDuue0qchDsFO8I6xCCCcItG9cPQQVUE3FMNsVA2i9x0DHHwaUEEp2L0xqlTAXVRoPaNEEF6LEi9w0IuuH4Gb6IIJKIPw1Ruj/FJEPGpFkEFNMjWxUJi8ueUEFFM4o4fLcrttyjQTgK0WXld13XQQTDWPhJSjBvfvfVd4NawD3V7QQXLl3TjkrlyCChRNyg9oiHnnBRoKcuhH//Z",
+        "name": "Megumi Hayashibara",
+        "figure": "Anna",
+        "code": 5
+    },
+    {
+        "id": "Park_Romi",
+        "image": "https://m.media-amazon.com/images/M/MV5BYmUxNDdlNDgtZTljMS00YjEzLTlkMWQtZTVjZDUxMDk5ZDAyXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+        "name": "Park Romi",
+        "figure": "Tao Ren",
+        "code": 5
+    },
+    {
+        "id": "Minami_Takayama",
+        "image": "https://cdn.myanimelist.net/images/voiceactors/1/42419.jpg",
+        "name": "Minami Takayama",
+        "figure": "Asakura Hao",
+        "code": 5
+    },
+    {
+        "id": "Katsuyuki_Konishi",
+        "image": "https://static.jojowiki.com/images/a/aa/latest/20201009050717/Katsuyuki_Konishi_2020.png",
+        "name": "Katsuyuki Konishi",
+        "figure": "Amida Maru",
+        "code": 5
+    },
+    {
+        "id": "Inuyama_Inuko",
+        "image": "https://zmp3-photo-fbcrawler.zmdcdn.me/avatars/1/5/7/e/157ee3f6bb3131980983467546339cd1.jpg",
+        "name": "Inuyama Inuko",
+        "figure": "Manta",
+        "code": 5
+    },
+    {
+        "id": "Chris_Evans",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Chris_Evans_-_Captain_America_2_press_conference_%28cropped2%29.jpg/181px-Chris_Evans_-_Captain_America_2_press_conference_%28cropped2%29.jpg",
+        "name": "Chris Evans",
+        "figure": "Captain America",
+        "code": 1
+    },
+    {
+        "id": "Robert_Downey_Jr",
+        "image": "https://static1.dienanh.net/upload/202107/338185a5-21c5-40bc-b82a-bc164eac2e92.jpeg",
+        "name": "Robert Downey Jr",
+        "figure": "Iron Man",
+        "code": 1
+    },
+    {
+        "id": "Sebastian_Stan",
+        "image": "https://rubyriverhotel.com.vn/wp-content/uploads/2021/12/1640733753_436_Top-13-phim-cua-Sebastian-Stan-%E2%80%93-Loat-phim-dinh.jpg",
+        "name": "Sebastian Stan",
+        "figure": "Winter Soldier",
+        "code": 1
+    },
+    {
+        "id": "Black_Widow",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Scarlett_Johansson_by_Gage_Skidmore_2_%28cropped%2C_2%29.jpg/640px-Scarlett_Johansson_by_Gage_Skidmore_2_%28cropped%2C_2%29.jpg",
+        "name": "Scarlett Johansson",
+        "figure": "Black Widow",
+        "code": 1
+    },
+    {
+        "id": "Chadwick_Boseman",
+        "image": "https://kenh14cdn.com/thumb_w/660/2020/8/29/e056bdcb2d94e7f89ea8266ea9a514b4-1598673646815908294879.jpg",
+        "name": "Chadwick Boseman",
+        "figure": "Black Panther",
+        "code": 1
+    },
+    {
+        "id": "Jeremy_Renner",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_k-dpqUTl3apYe0pk6oiDdXytdeG8Woyyg&usqp=CAU",
+        "name": "Jeremy Renner",
+        "figure": "Hawkeye",
+        "code": 1
+    }
+]

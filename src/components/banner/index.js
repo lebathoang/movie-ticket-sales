@@ -1,10 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Carousel } from 'react-bootstrap';
-import './index.scss';
-import BannerMain from '~/shared/mocks/banner-main.json';
-import { bannerChange } from '~/store/reducers/global/action';
 import { useDispatch } from 'react-redux';
+
+import { bannerChange } from '~/store/reducers/global/action';
+import BannerMain from '~/shared/mocks/banner-main.json';
+import './index.scss';
 
 function Banner() {
     const dispatch = useDispatch();

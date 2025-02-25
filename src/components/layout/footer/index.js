@@ -6,8 +6,9 @@ import {
     faApple,
     faGooglePlay,
 } from '@fortawesome/free-brands-svg-icons';
-import Logo from '~/assets/images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import Logo from '~/assets/images/logo.png';
 import './index.scss';
 
 function Footer() {

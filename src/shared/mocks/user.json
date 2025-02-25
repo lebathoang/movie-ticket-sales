@@ -1,4 +1,6 @@
 {
+    "id": 1,
     "fullName": "pikachu",
-    "email": "pikachu007@gmail.com"
+    "email": "pikachu007@gmail.com",
+    "password": "11771177"
 }

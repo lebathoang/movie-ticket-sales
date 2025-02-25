@@ -1,11 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+
 import Header from '~/components/layout/header';
 import Footer from '~/components/layout/footer';
 import Banner from '~/components/banner';
 import Main from '~/components/main';
 import Login from '~/components/login';
 import './index.scss';
-import { useSelector } from 'react-redux';
 
 function Home() {
     const appState = useSelector((state) => state);

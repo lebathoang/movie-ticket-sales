@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react';
+
 import ListFilmItem from './ListFilmItem';
 import data from '~/shared/mocks/films.json';
-import { useEffect, useState } from 'react';
 
 function ListFilm() {
     const [listFilms, setListFilms] = useState([]);

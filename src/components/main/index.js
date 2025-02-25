@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
-import './index.scss';
-import { SecondaryButton } from '../button';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import BannerMain from '~/shared/mocks/banner-main.json';
 import { useSelector } from 'react-redux';
-import ListFilm from '../Film_Item/ListItem';
+
+import BannerMain from '~/shared/mocks/banner-main.json';
+import ListFilm from '../film_item/ListItem';
+import { SecondaryButton } from '../button';
+import './index.scss';
 
 function Main() {
     const bannerSelected = useSelector((state) => state.global.bannerSelected);

@@ -1,16 +1,17 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './index.scss';
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+
 import Logo from '~/assets/images/logo.png';
 import { PrimaryButton } from '~/components/button';
 import { SixthButton } from '~/components/button';
 import Account from './acount';
-import CartShopping from '~/components/Cart_shopping';
-import { Link } from 'react-router-dom';
+import CartShopping from '~/components/cart_shopping';
 import { signIn } from '~/store/reducers/auth/actions';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import './index.scss';
 
 function Header() {
     const loginSuccessful = useSelector((state) => state);
@@ -33,6 +34,9 @@ function Header() {
                                 <img className="header-image" src={Logo} />
                             </Link>
                             <ul>
+                                <Link to="/admin">
+                                    <li>Admin</li>
+                                </Link>
                                 <Link to="/event">
                                     <li>Event</li>
                                 </Link>

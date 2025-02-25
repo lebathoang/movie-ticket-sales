@@ -12,7 +12,7 @@ function SecondMainTheatre({ film }) {
     const cart = useSelector((state) => state.cart);
     const booked = cart.booked;
     const customerSeats = cart.customerSeats;
-    const selectedSeats = cart.ticket.filter((e) => e.Id == film.Id);
+    const selectedSeats = cart.ticket.filter((e) => e.Id === film.Id);
     const selectedCode = selectedSeats.map((item) => item.code);
     const [place, setPlace] = useState(null);
     const [row, setRow] = useState(null);

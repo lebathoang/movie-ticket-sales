@@ -1,17 +1,19 @@
+import ReactPlayer from 'react-player';
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useDispatch } from 'react-redux';
+import { faAngleRight, faChartSimple, faHeart, faHouseChimney } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+
 import Header from '~/components/layout/header';
 import Footer from '~/components/layout/footer';
-import './index.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faChartSimple, faHeart, faHouseChimney } from '@fortawesome/free-solid-svg-icons';
 import FilmDetail from '~/shared/mocks/films.json';
 import Cast from '~/shared/mocks/casts.json';
+import Test from '~/shared/mocks/test.json';
 import { SecondaryButton } from '~/components/button';
-import { useDispatch } from 'react-redux';
 import { getId } from '~/store/reducers/detail/action';
-import ReactPlayer from 'react-player';
+import './index.scss';
 
 function Details() {
     const dispatch = useDispatch();

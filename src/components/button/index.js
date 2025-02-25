@@ -1,6 +1,7 @@
-import '~/assets/css/button/index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faCheck, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+
+import '~/assets/css/button/index.scss';
 
 export function PrimaryButton({ onClick, label }) {
     return (

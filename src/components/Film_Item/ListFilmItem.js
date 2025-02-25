@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { SecondaryButton } from '../button';
 import 'bootstrap/dist/css/bootstrap.css';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { getId } from '~/store/reducers/detail/action';
 import { useDispatch } from 'react-redux';
+
+import { getId } from '~/store/reducers/detail/action';
+import { SecondaryButton } from '../button';
+import './index.scss';
 
 function ListFilmItem({ data }) {
     const dispatch = useDispatch();

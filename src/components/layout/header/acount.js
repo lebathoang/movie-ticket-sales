@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightFromBracket, faCaretUp, faEarthAsia, faLandmark } from '@fortawesome/free-solid-svg-icons';
-import './account.scss';
+
 import { logOut } from '~/store/reducers/auth/actions';
+import './account.scss';
 
 function Account() {
     const dispatch = useDispatch();

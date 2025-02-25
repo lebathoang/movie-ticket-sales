@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import './index.scss';
 import CloseButton from 'react-bootstrap/CloseButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretUp, faFaceSmileBeam } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { removeTicket } from '~/store/reducers/cart/actions';
+import './index.scss';
 
 function CartShopping() {
     const dispatch = useDispatch();

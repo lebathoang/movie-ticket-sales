@@ -20,9 +20,10 @@ const CartReducer = (state = initState, action) => {
             return {
                 ...state,
                 ticket: state.ticket.filter(
-                    (item) => item.code != action.code || (item.code == action.code && item.Id != action.filmDetail.Id),
+                    (item) =>
+                        item.code !== action.code || (item.code === action.code && item.Id !== action.filmDetail.Id),
                 ),
-                customerSeats: state.customerSeats.filter((item) => item != action.code),
+                customerSeats: state.customerSeats.filter((item) => item !== action.code),
             };
         default:
             return state;

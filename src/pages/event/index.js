@@ -2,15 +2,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Carousel } from 'react-bootstrap';
 import { useState } from 'react';
-import Header from '~/components/layout/header';
-import Footer from '~/components/layout/footer';
-import './index.scss';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight, faHandPointRight, faCaretLeft } from '@fortawesome/free-solid-svg-icons';
+
 import BannerEvent from '~/shared/mocks/banner-event.json';
 import Eventjson from '~/shared/mocks/event.json';
 import Member from '~/shared/mocks/member.json';
+import Header from '~/components/layout/header';
+import Footer from '~/components/layout/footer';
+import './index.scss';
 
 function Event() {
     const [choose, setChoose] = useState(true);
