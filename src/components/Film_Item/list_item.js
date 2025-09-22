@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import ListFilmItem from './ListFilmItem';
+import ListFilmItem from './list_film_itemem.js';
 import data from '~/shared/mocks/films.json';
 
 function ListFilm() {

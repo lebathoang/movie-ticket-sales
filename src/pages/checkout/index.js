@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -7,15 +7,34 @@ import Header from '~/components/layout/header';
 import Footer from '~/components/layout/footer';
 import './index.scss';
 import { faEnvelope, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { removeTicket } from '~/store/reducers/cart/actions';
 
 function Checkout() {
+    const dispatch = useDispatch();
     const itemState = useSelector((state) => state.cart);
     const [totalMoney, setTotalMoney] = useState(0);
     const ticket = itemState.ticket;
     const count = ticket.length;
 
     const list_ticket = ticket.filter((value, index, self) => index === self.findIndex((e) => e.Id === value.Id));
-    console.log(ticket);
+
+    // dem so luong ve trung nhau
+    const countDuplicates = (arr) => {
+        return arr.reduce((acc, item) => {
+            acc[item.Id] = (acc[item.Id] || 0) + 1;
+            return acc;
+        }, {});
+    };
+    const duplicates = countDuplicates(ticket);
+
+    // tinh tong gia ve co id trung nhau
+    const sumPriceById = (arr) => {
+        return arr.reduce((acc, item) => {
+            acc[item.Id] = (acc[item.Id] || 0) + item.Price;
+            return acc;
+        }, {});
+    };
+    const sumPrice = sumPriceById(ticket);
 
     useEffect(() => {
         const sum = ticket.reduce((a, b) => a + b.Price, 0);
@@ -25,6 +44,10 @@ function Checkout() {
 
     const handle_checkout = () => {
         console.log('Checkout Successful');
+    };
+
+    const handleRemoveTicket = (code, film) => {
+        dispatch(removeTicket(code, film));
     };
 
     return (
@@ -88,13 +111,20 @@ function Checkout() {
                                     </div>
                                     <div className="cart-count">
                                         <div className="cart-count-quantity">
-                                            <span>{count}</span>
+                                            {Object.entries(duplicates).map(([key, value]) => (
+                                                <span key={key}>{key == tick.Id ? value : ''}</span>
+                                            ))}
                                         </div>
                                         <div className="cart-count-total">
-                                            <span>12.500 ₫</span>
+                                            {Object.entries(sumPrice).map(([id, value]) => (
+                                                <span key={id}>{id == tick.Id ? value + '.000 ₫' : ''}</span>
+                                            ))}
                                         </div>
                                         <button className="cart-count-remove">
-                                            <FontAwesomeIcon icon={faTrash} />
+                                            <FontAwesomeIcon
+                                                icon={faTrash}
+                                                onclick={() => handleRemoveTicket(tick.code, tick)}
+                                            />
                                         </button>
                                     </div>
                                 </div>

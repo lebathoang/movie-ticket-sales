@@ -1,6 +1,14 @@
-{
-    "id": 1,
-    "fullName": "pikachu",
-    "email": "pikachu007@gmail.com",
-    "password": "11771177"
-}
+[
+    {
+        "id": 1,
+        "fullName": "pikachu",
+        "email": "pikachu007@gmail.com",
+        "password": "11771177"
+    },
+    {
+        "id": 2,
+        "fullName": "admin",
+        "email": "admin123@gmail.com",
+        "password": "1234567"
+    }
+]

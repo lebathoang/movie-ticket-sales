@@ -26,11 +26,13 @@
         "react-router-dom": "^6.3.0",
         "react-scripts": "5.0.1",
         "redux": "^4.2.0",
+        "serve": "^14.2.5",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
         "start": "react-app-rewired start",
         "build": "react-app-rewired build",
+        "heroku-postbuild": "npm run build",
         "test": "react-app-rewired test",
         "eject": "react-app-rewired eject"
     },
