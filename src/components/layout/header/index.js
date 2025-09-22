@@ -9,7 +9,7 @@ import Logo from '~/assets/images/logo.png';
 import { PrimaryButton } from '~/components/button';
 import { SixthButton } from '~/components/button';
 import Account from './acount';
-import CartShopping from '~/components/cart_shopping';
+import CartShopping from '~/components/cart_shopping/index.js';
 import { signIn } from '~/store/reducers/auth/actions';
 import './index.scss';
 
