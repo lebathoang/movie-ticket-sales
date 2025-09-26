@@ -30,11 +30,14 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "start": "serve -s build",
+        "start": "react-app-rewired start",
         "build": "react-app-rewired build",
         "heroku-postbuild": "npm run build",
         "test": "react-app-rewired test",
         "eject": "react-app-rewired eject"
+    },
+    "engines": {
+        "node": "20.x"
     },
     "eslintConfig": {
         "extends": [
