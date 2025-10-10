@@ -7,6 +7,7 @@ import Film from './pages/film';
 import Event from './pages/event';
 import MovieCorner from './pages/movie-corner';
 import Checkout from './pages/checkout';
+import Admin from './admin';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/event" element={<Event />} />
                     <Route path="/moviecorner" element={<MovieCorner />} />
                     <Route path="/checkout" element={<Checkout />} />
+                    <Route path="/admin" element={<Admin />} />
                 </Routes>
             </div>
         </Router>
