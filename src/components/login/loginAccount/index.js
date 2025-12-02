@@ -1,25 +1,38 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { setAccount } from '~/store/reducers/user/action';
-import userMock from '~/shared/mocks/user.json';
+
 import { successful } from '~/store/reducers/auth/actions';
 import './index.scss';
 
 function LoginAccount() {
+    const [users, setUsers] = useState([]);
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
     const [error, setError] = useState('');
     const dispatch = useDispatch();
+
     useEffect(() => {
+        axios
+            .get('http://localhost:3000/users')
+            .then((res) => {
+                setUsers(res.data);
+            })
+            .catch((err) => {
+                console.log('Error ', err);
+            });
+
         if (error) {
             setError('');
         }
     }, [email, password]);
     // handle login
-    const handleLogin = () => {
+    const handleSubmit = () => {
         var check = true;
         if (!email.length) {
             setEmailError('Please enter your email');
@@ -36,11 +49,11 @@ function LoginAccount() {
             check = false;
         }
         if (check) {
-            if (email == userMock.email) {
-                dispatch(setAccount(userMock));
-            } else {
-                setError('Email or password is incorrect');
-            }
+            // if (email == userMock.email) {
+            //     dispatch(setAccount(userMock));
+            // } else {
+            //     setError('Email or password is incorrect');
+            // }
         }
         dispatch(successful());
     };
@@ -60,7 +73,7 @@ function LoginAccount() {
     };
 
     return (
-        <div>
+        <form onSubmit={handleSubmit}>
             <label className="title-account">
                 Please log in before buying tickets to accumulate points, the opportunity to receive more incentives
                 from Banana membership program.
@@ -90,11 +103,9 @@ function LoginAccount() {
             </Link>
             <p className="text-error">{error}</p>
             <div className="login-wrap-button">
-                <button type="button" onClick={handleLogin}>
-                    Log in
-                </button>
+                <button type="submit">Log in</button>
             </div>
-        </div>
+        </form>
     );
 }
 
