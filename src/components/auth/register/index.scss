@@ -5,7 +5,7 @@
     color: red;
 }
 .login-wrap-input {
-    padding: 12px 0 12px;
+    padding: 10px 0 10px;
     input {
         padding: 5px 10px;
         width: 395px;
@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 0 10px;
     input {
         width: 190px;
         padding: 5px 10px;
@@ -58,11 +59,18 @@
     }
 }
 .login-policy {
+    display: flex;
     padding-top: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+    input {
+        margin-right: 5px;
+    }
     p {
         font-size: 14px;
         font-weight: 600;
         color: #7c7c7c;
+        margin: 0;
     }
     a {
         font-size: 16px;

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { faArrowRotateLeft } from '@fortawesome/free-solid-svg-icons';
@@ -10,6 +10,7 @@ import './index.scss';
 
 function Register() {
     const [form, setForm] = useState({ fullname: '', email: '', password: '' });
+    const [account, setAccount] = useState([]);
 
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
@@ -23,6 +24,19 @@ function Register() {
     const [passwordError, setPasswordError] = useState('');
     const [confirmPasswordError, setConfirmPasswordError] = useState('');
     const [capchaError, setCapchaError] = useState('');
+
+    useEffect(() => {
+        axios
+            .get('http://localhost:3000/users')
+            .then((res) => {
+                setAccount(res.data);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }, []);
+
+    console.log(account);
 
     const dispatch = useDispatch();
     // handle register
@@ -40,6 +54,12 @@ function Register() {
             setEmailError('Email address is invalid');
             check = false;
         }
+        account.forEach((ele) => {
+            if (ele.email === email) {
+                setEmailError('This email already exist');
+                check = false;
+            }
+        });
         if (!password.length) {
             setPasswordError('Please enter your password');
             check = false;
@@ -64,7 +84,7 @@ function Register() {
                 .then((res) => alert('Đăng ký tài khoản thành công'))
                 .catch((err) => console.log(err));
         }
-        dispatch(successful());
+        // dispatch(successful());
     };
     // handle fullname
     const handleFullName = (event) => {
@@ -125,14 +145,6 @@ function Register() {
                 />
                 <p className="text-error">{nameError}</p>
             </div>
-            <div className="login-d-flex">
-                <input type="tel" placeholder="Phone Number" />
-                <select>
-                    <option value="">Gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
             <div className="login-wrap-input">
                 <input
                     type="Email"
@@ -165,6 +177,14 @@ function Register() {
                     <p className="text-error">{confirmPasswordError}</p>
                 </div>
             </div>
+            <div className="login-d-flex">
+                <input type="tel" placeholder="Phone Number" />
+                <select>
+                    <option value="">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
             <div className="login-wrap-input">
                 <input type="text" placeholder="Date Of Birth" />
             </div>
@@ -184,6 +204,7 @@ function Register() {
                 </div>
             </div>
             <div className="login-policy">
+                <input type="checkbox" />
                 <p>
                     Tôi đã đọc và đồng ý với <Link to="#">Chính Sách</Link> của chương trình
                 </p>

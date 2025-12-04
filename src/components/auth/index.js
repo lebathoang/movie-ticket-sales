@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './index.scss';
+import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
 import { turnOff } from '~/store/reducers/auth/actions';
-import { useDispatch } from 'react-redux';
-import LoginAccount from './loginAccount';
+import LoginAccount from './login';
 import Register from './register';
+import './index.scss';
 
 function Login() {
     const [status, setStatus] = useState(true);

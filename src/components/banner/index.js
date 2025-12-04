@@ -17,7 +17,7 @@ function Banner() {
         <div className="banner-wrap">
             <Carousel onSelect={handleSelect}>
                 {BannerMain.map((items, index) => (
-                    <Carousel.Item interval={5000} key={index}>
+                    <Carousel.Item interval={50000} key={index}>
                         <div className="banner-label">
                             <img className="banner" src={items.image} />
                         </div>

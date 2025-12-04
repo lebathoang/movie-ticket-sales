@@ -5,7 +5,7 @@ import Header from '~/components/layout/header';
 import Footer from '~/components/layout/footer';
 import Banner from '~/components/banner';
 import Main from '~/components/main';
-import Login from '~/components/login';
+import Login from '~/components/auth';
 import './index.scss';
 
 function Home() {
