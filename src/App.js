@@ -8,6 +8,8 @@ import Event from './pages/event';
 import MovieCorner from './pages/movie-corner';
 import Checkout from './pages/checkout';
 import Admin from './admin';
+import Register from './components/auth/register';
+import ActiveAccount from './components/activate-account/ActivateAccount';
 
 function App() {
     return (
@@ -22,6 +24,8 @@ function App() {
                     <Route path="/moviecorner" element={<MovieCorner />} />
                     <Route path="/checkout" element={<Checkout />} />
                     <Route path="/admin" element={<Admin />} />
+                    <Route path="/register" element={<Register />} />
+                    <Route path="/activate-account" element={<ActiveAccount />} />
                 </Routes>
             </div>
         </Router>
