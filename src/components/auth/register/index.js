@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useDispatch } from 'react-redux';
 import { faArrowRotateLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-import { successful } from '~/store/reducers/auth/actions';
 import './index.scss';
 
 function Register() {
     const [form, setForm] = useState({ fullname: '', email: '', password: '' });
+    const [msg, setMsg] = useState('');
     const [account, setAccount] = useState([]);
+    const navigate = useNavigate();
 
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
@@ -25,22 +25,8 @@ function Register() {
     const [confirmPasswordError, setConfirmPasswordError] = useState('');
     const [capchaError, setCapchaError] = useState('');
 
-    useEffect(() => {
-        axios
-            .get('http://localhost:3000/users')
-            .then((res) => {
-                setAccount(res.data);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }, []);
-
-    console.log(account);
-
-    const dispatch = useDispatch();
     // handle register
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         var check = true;
         if (!fullName.length) {
@@ -78,13 +64,6 @@ function Register() {
             setCapchaError('Code capcha is invalid');
             check = false;
         }
-        if (check) {
-            axios
-                .post('http://localhost:3000/users', form)
-                .then((res) => alert('Đăng ký tài khoản thành công'))
-                .catch((err) => console.log(err));
-        }
-        // dispatch(successful());
     };
     // handle fullname
     const handleFullName = (event) => {
@@ -212,6 +191,7 @@ function Register() {
             <div className="login-wrap-button">
                 <button type="submit">Register</button>
             </div>
+            {msg && <p>{msg}</p>}
         </form>
     );
 }

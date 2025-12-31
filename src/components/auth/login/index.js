@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { setAccount } from '~/store/reducers/user/action';
 
 import { successful } from '~/store/reducers/auth/actions';
 import './index.scss';
@@ -31,8 +30,11 @@ function LoginAccount() {
             setError('');
         }
     }, [email, password]);
+
     // handle login
-    const handleSubmit = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
         var check = true;
         if (!email.length) {
             setEmailError('Please enter your email');
@@ -48,14 +50,16 @@ function LoginAccount() {
             setEmailError('Password must be from 6 - 30 characters');
             check = false;
         }
-        if (check) {
-            // if (email == userMock.email) {
-            //     dispatch(setAccount(userMock));
-            // } else {
-            //     setError('Email or password is incorrect');
-            // }
+        const checkUser = users.find((ele) => email === ele.email && password === ele.password);
+        if (checkUser) {
+            check = true;
+        } else {
+            setError('Incorrect email or password');
+            check = false;
         }
-        dispatch(successful());
+        if (check) {
+            dispatch(successful());
+        }
     };
     // handle email
     const handleEmailValue = (event) => {

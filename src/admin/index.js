@@ -8,7 +8,7 @@ function UserList() {
 
     useEffect(() => {
         axios
-            .get('http://localhost:3000/users')
+            .get('http://localhost:3000/api/auth')
             .then((res) => {
                 setUsers(res.data);
             })
