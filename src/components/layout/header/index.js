@@ -1,7 +1,6 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
@@ -10,7 +9,6 @@ import { PrimaryButton } from '~/components/button';
 import { SixthButton } from '~/components/button';
 import Account from './acount';
 import CartShopping from '~/components/cart_shopping/index.js';
-import { signIn } from '~/store/reducers/auth/actions';
 import './index.scss';
 
 function Header() {
@@ -18,11 +16,6 @@ function Header() {
     const successful = loginSuccessful.auth;
     const countProduct = useSelector((state) => state);
     const product = countProduct.cart.ticket;
-    const dispatch = useDispatch();
-
-    const handleLogin = () => {
-        dispatch(signIn());
-    };
 
     return (
         <>
@@ -66,7 +59,9 @@ function Header() {
                                     </DropdownButton>
                                 </div>
                             ) : (
-                                <PrimaryButton label={'Login'} onClick={handleLogin} />
+                                <Link to="/auth">
+                                    <PrimaryButton label={'Login'} />
+                                </Link>
                             )}
                             <SixthButton ticket={product.length} />
                             <DropdownButton title="">

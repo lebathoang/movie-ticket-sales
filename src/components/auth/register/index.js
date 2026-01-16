@@ -1,18 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { faArrowRotateLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './index.scss';
 
 function Register() {
-    const [form, setForm] = useState({ fullname: '', email: '', password: '' });
-    const [msg, setMsg] = useState('');
-    const [account, setAccount] = useState([]);
-    const navigate = useNavigate();
-
-    const [fullName, setFullName] = useState('');
+    const [fullname, setFullname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -29,7 +24,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         var check = true;
-        if (!fullName.length) {
+        if (!fullname.length) {
             setNameError('Please enter your name');
             check = false;
         }
@@ -40,12 +35,6 @@ function Register() {
             setEmailError('Email address is invalid');
             check = false;
         }
-        account.forEach((ele) => {
-            if (ele.email === email) {
-                setEmailError('This email already exist');
-                check = false;
-            }
-        });
         if (!password.length) {
             setPasswordError('Please enter your password');
             check = false;
@@ -64,15 +53,24 @@ function Register() {
             setCapchaError('Code capcha is invalid');
             check = false;
         }
+
+        if (!check) return;
+        try {
+            const res = await axios.post('http://localhost:3000/api/auth/register', {
+                fullname,
+                email,
+                password,
+            });
+            alert('Register success. Please check email to activate account.');
+        } catch (err) {
+            alert('Server error');
+            console.log(err);
+        }
     };
     // handle fullname
     const handleFullName = (event) => {
         const value = event.target.value;
-        setForm({
-            ...form,
-            fullname: value,
-        });
-        setFullName(value);
+        setFullname(value);
         if (nameError) {
             setNameError('');
         }
@@ -80,10 +78,6 @@ function Register() {
     // handle email
     const handleEmail = (event) => {
         const value = event.target.value;
-        setForm({
-            ...form,
-            email: value,
-        });
         setEmail(value);
         if (emailError) {
             setEmailError('');
@@ -92,10 +86,6 @@ function Register() {
     // handle password
     const handlePassword = (event) => {
         const value = event.target.value;
-        setForm({
-            ...form,
-            password: value,
-        });
         setPassword(value);
         setPasswordError('');
     };
@@ -119,7 +109,7 @@ function Register() {
                     type="text"
                     className={nameError ? 'border-error' : ''}
                     placeholder="Fullname"
-                    value={form.fullname}
+                    value={fullname}
                     onChange={handleFullName}
                 />
                 <p className="text-error">{nameError}</p>
@@ -129,7 +119,7 @@ function Register() {
                     type="Email"
                     className={emailError ? 'border-error' : ''}
                     placeholder="Email"
-                    value={form.email}
+                    value={email}
                     onChange={handleEmail}
                 />
                 <p className="text-error">{emailError}</p>
@@ -140,7 +130,7 @@ function Register() {
                         type="password"
                         className={passwordError ? 'border-error' : ''}
                         placeholder="Password"
-                        value={form.password}
+                        value={password}
                         onChange={handlePassword}
                     />
                     <p className="text-error">{passwordError}</p>
@@ -191,7 +181,6 @@ function Register() {
             <div className="login-wrap-button">
                 <button type="submit">Register</button>
             </div>
-            {msg && <p>{msg}</p>}
         </form>
     );
 }

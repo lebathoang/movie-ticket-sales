@@ -1,18 +1,30 @@
+.forgot-password-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 900px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 40px #0000004a;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    .forgot-password-content {
+        width: 435px;
+    }
+}
 .border-error {
     border: 1px solid red;
 }
 .text-error {
     color: red;
 }
-.title-account {
-    font-size: 12px;
-    font-weight: 600;
-    color: #7c7c7c;
-}
 .login-wrap-input {
     padding: 12px 0 12px;
     input {
         padding: 5px 10px;
+        width: 100%;
         outline: none;
     }
     p {
@@ -32,14 +44,10 @@ a {
     }
 }
 
-.wrap-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .login-wrap-button {
     padding: 5px 0 20px;
     button {
+        width: 100%;
         padding: 10px 0;
         background: #f26b38;
         border: 0;

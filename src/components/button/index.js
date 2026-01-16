@@ -3,12 +3,10 @@ import { faCartShopping, faCheck, faThumbsUp } from '@fortawesome/free-solid-svg
 
 import '~/assets/css/button/index.scss';
 
-export function PrimaryButton({ onClick, label }) {
+export function PrimaryButton({ label }) {
     return (
         <div className="login-btn">
-            <button type="button" onClick={onClick}>
-                {label}
-            </button>
+            <button type="button">{label}</button>
         </div>
     );
 }
