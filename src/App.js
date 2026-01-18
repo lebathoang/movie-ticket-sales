@@ -9,7 +9,9 @@ import MovieCorner from './pages/movie-corner';
 import Checkout from './pages/checkout';
 import Admin from './admin';
 import Register from './components/auth/register';
-import ActiveAccount from './components/activate-account/ActivateAccount';
+import Auth from './components/auth';
+import ActiveAccount from './components/activate-account';
+import ForgotPassword from './components/auth/forgot-password';
 
 function App() {
     return (
@@ -25,7 +27,9 @@ function App() {
                     <Route path="/checkout" element={<Checkout />} />
                     <Route path="/admin" element={<Admin />} />
                     <Route path="/register" element={<Register />} />
+                    <Route path="/auth" element={<Auth />} />
                     <Route path="/activate-account" element={<ActiveAccount />} />
+                    <Route path="/forgot-password" element={<ForgotPassword />} />
                 </Routes>
             </div>
         </Router>

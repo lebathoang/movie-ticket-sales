@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { successful } from '~/store/reducers/auth/actions';
 import './index.scss';
 
 function LoginAccount() {
-    const [users, setUsers] = useState([]);
-
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -16,24 +15,9 @@ function LoginAccount() {
     const [error, setError] = useState('');
     const dispatch = useDispatch();
 
-    useEffect(() => {
-        axios
-            .get('http://localhost:3000/users')
-            .then((res) => {
-                setUsers(res.data);
-            })
-            .catch((err) => {
-                console.log('Error ', err);
-            });
-
-        if (error) {
-            setError('');
-        }
-    }, [email, password]);
-
     // handle login
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         var check = true;
         if (!email.length) {
@@ -47,18 +31,28 @@ function LoginAccount() {
             setPasswordError('Please enter your password');
             check = false;
         } else if (password.length < 6 || password.length > 30) {
-            setEmailError('Password must be from 6 - 30 characters');
+            setPasswordError('Password must be from 6 - 30 characters');
             check = false;
         }
-        const checkUser = users.find((ele) => email === ele.email && password === ele.password);
-        if (checkUser) {
-            check = true;
-        } else {
-            setError('Incorrect email or password');
-            check = false;
-        }
-        if (check) {
+
+        if (!check) return;
+        try {
+            const res = await axios.post('http://localhost:3000/api/auth/login', {
+                email,
+                password,
+            });
+
+            localStorage.setItem('token', res.data.token);
             dispatch(successful());
+            navigate('/');
+        } catch (err) {
+            if (err.response?.status === 403) {
+                setError('Your account has not been activated. Please check email to activate account.');
+            } else if (err.response?.status === 401) {
+                setError(err.response.data.message);
+            } else {
+                setError('Server error. Please try again later.');
+            }
         }
     };
     // handle email
@@ -102,9 +96,11 @@ function LoginAccount() {
                 />
                 <p className="text-error">{passwordError}</p>
             </div>
-            <Link to="#">
-                <p className="forgot-password">Forgot password ?</p>
-            </Link>
+            <div className="wrap-link">
+                <Link to="/forgot-password">
+                    <p className="forgot-password">Forgot password ?</p>
+                </Link>
+            </div>
             <p className="text-error">{error}</p>
             <div className="login-wrap-button">
                 <button type="submit">Log in</button>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import BannerMain from '~/shared/mocks/banner-main.json';
-import ListFilm from '../film_item/ListItem.js';
+import ListFilm from '~/components/Film_Item/ListItem';
 import { SecondaryButton } from '../button';
 import './index.scss';
 

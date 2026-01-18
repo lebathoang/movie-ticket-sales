@@ -8,7 +8,7 @@
     padding: 10px 0 10px;
     input {
         padding: 5px 10px;
-        width: 395px;
+        width: 100%;
         outline: none;
     }
     p {
@@ -23,12 +23,12 @@
     justify-content: space-between;
     padding: 10px 0 10px;
     input {
-        width: 190px;
+        width: 210px;
         padding: 5px 10px;
         outline: none;
     }
     select {
-        width: 190px;
+        width: 210px;
         padding: 5px 10px;
         outline: none;
         border: 1px solid #737373;
@@ -78,9 +78,8 @@
     }
 }
 .login-wrap-button {
-    padding: 5px 0 20px;
     button {
-        width: 395px;
+        width: 100%;
         padding: 10px 0;
         background: #f26b38;
         border: 0;
