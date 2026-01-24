@@ -159,7 +159,7 @@ function ActiveAccount() {
                         <div className="activate-expired">
                             {resendStatus === 'activated' && (
                                 <div className="success">
-                                    <p className="title">Account already activated.</p>
+                                    <p className="message">Account already activated.</p>
                                     <button className="try_again">
                                         <Link to="/auth">Login</Link>
                                     </button>
@@ -167,7 +167,7 @@ function ActiveAccount() {
                             )}
                             {resendStatus === 'idle' && (
                                 <>
-                                    <p className="title">Activation link has expired.</p>
+                                    <p className="message">Activation link has expired.</p>
                                     <div className="login-wrap-button">
                                         <button disabled={resendStatus === 'loading'} onClick={handleResend}>
                                             {resendStatus === 'loading' ? 'Sending...' : 'Resend activation link'}
@@ -178,7 +178,7 @@ function ActiveAccount() {
                             {resendStatus === 'loading' && (
                                 <div className="resend-animation">
                                     <div className="spinner"></div>
-                                    <p className="title">Sending new activation link...</p>
+                                    <p className="message">Sending new activation link...</p>
                                 </div>
                             )}
                             {resendStatus === 'success' && (
@@ -214,6 +214,7 @@ function ActiveAccount() {
 
                     {status === 'empty' && (
                         <form onSubmit={handleSubmit}>
+                            <h2 className="title">Activate Account</h2>
                             <div className="login-wrap-input">
                                 <input
                                     type="email"
@@ -251,45 +252,7 @@ function ActiveAccount() {
                         </form>
                     )}
 
-                    {status === 'error' && (
-                        <p className="title">Sever Error</p>
-                        // <form onSubmit={handleSubmit}>
-                        //     <div className="login-wrap-input">
-                        //         <input
-                        //             type="email"
-                        //             className={emailError ? 'border-error' : ''}
-                        //             placeholder="Email"
-                        //             value={email}
-                        //             onChange={handleEmailValue}
-                        //         />
-                        //         <p className="text-error">{emailError}</p>
-                        //     </div>
-                        //     <div className="login-wrap-input">
-                        //         <input
-                        //             className={passwordError ? 'border-error' : ''}
-                        //             type="password"
-                        //             placeholder="Password"
-                        //             value={password}
-                        //             onChange={handlePasswordValue}
-                        //         />
-                        //         <p className="text-error">{passwordError}</p>
-                        //     </div>
-                        //     <div className="login-wrap-input">
-                        //         <input
-                        //             className={confirmPasswordError ? 'border-error' : ''}
-                        //             type="password"
-                        //             placeholder="Confirm Password"
-                        //             value={confirmPassword}
-                        //             onChange={handleConfirmPasswordValue}
-                        //         />
-                        //         <p className="text-error">{confirmPasswordError}</p>
-                        //     </div>
-                        //     <p className="text-error">{error}</p>
-                        //     <div className="login-wrap-button">
-                        //         <button type="submit">Active</button>
-                        //     </div>
-                        // </form>
-                    )}
+                    {status === 'error' && <p className="message">{error}</p>}
                 </div>
                 <div>
                     <img src={Logo} />
