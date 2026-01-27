@@ -12,6 +12,7 @@ import Register from './components/auth/register';
 import Auth from './components/auth';
 import ActiveAccount from './components/activate-account';
 import ForgotPassword from './components/auth/forgot-password';
+import ResetPassword from './components/auth/reset-password';
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/auth" element={<Auth />} />
                     <Route path="/activate-account" element={<ActiveAccount />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
+                    <Route path="/reset-password" element={<ResetPassword />} />
                 </Routes>
             </div>
         </Router>
