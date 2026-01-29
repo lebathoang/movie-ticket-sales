@@ -12,8 +12,7 @@ import CartShopping from '~/components/Cart_shopping/index';
 import './index.scss';
 
 function Header() {
-    const loginSuccessful = useSelector((state) => state);
-    const successful = loginSuccessful.auth;
+    const successful = useSelector((state) => state.auth);
     const countProduct = useSelector((state) => state);
     const product = countProduct.cart.ticket;
 
@@ -44,7 +43,7 @@ function Header() {
                                 <input placeholder="Enter movie name ... " />
                                 <FontAwesomeIcon className="header-icon" icon={faSearch} />
                             </div>
-                            {successful.successful ? (
+                            {successful.isAuthenticated ? (
                                 <div className="header-account-login">
                                     <img
                                         className="header-login-image"

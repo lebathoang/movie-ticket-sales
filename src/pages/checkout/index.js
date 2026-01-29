@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '~/components/layout/header';
@@ -11,8 +11,11 @@ import { removeTicket } from '~/store/reducers/cart/actions';
 
 function Checkout() {
     const dispatch = useDispatch();
+    const location = useLocation();
     const itemState = useSelector((state) => state.cart);
     const [totalMoney, setTotalMoney] = useState(0);
+    const [showLoginModal, setShowLoginModal] = useState(false);
+    const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
     const ticket = itemState.ticket;
     const count = ticket.length;
 
@@ -42,7 +45,15 @@ function Checkout() {
         setTotalMoney(sumMoney);
     }, [count]);
 
+    useEffect(() => {
+        document.body.style.overflow = showLoginModal ? 'hidden' : 'auto';
+    }, [showLoginModal]);
+
     const handle_checkout = () => {
+        if (!isAuthenticated) {
+            setShowLoginModal(true);
+            return;
+        }
         console.log('Checkout Successful');
     };
 
@@ -141,10 +152,27 @@ function Checkout() {
                             </div>
                             <div className="cart-total">
                                 <h4>Tổng cộng: {totalMoney} ₫</h4>
-                                <button className="checkout-button" disable onClick={handle_checkout()}>
+                                <button className="checkout-button" onClick={handle_checkout}>
                                     Thanh Toán
                                 </button>
                             </div>
+                            {showLoginModal && (
+                                <div className="login-modal-overlay">
+                                    <div className="login-modal">
+                                        <h3>Bạn cần đăng nhập</h3>
+                                        <p>Vui lòng đăng nhập để tiếp tục thanh toán</p>
+
+                                        <div className="login-modal-actions">
+                                            <Link to={`/auth?redirect=${location.pathname}`}>
+                                                <button>Đăng nhập</button>
+                                            </Link>
+                                            <button className="btn-cancel" onClick={() => setShowLoginModal(false)}>
+                                                Hủy
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </div>
                     <div className="form-container">

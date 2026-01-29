@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 
-import { successful } from '~/store/reducers/auth/actions';
+import { signIn } from '~/store/reducers/auth/actions';
 import './index.scss';
 
-function LoginAccount() {
+function Login() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -14,6 +14,9 @@ function LoginAccount() {
     const [passwordError, setPasswordError] = useState('');
     const [error, setError] = useState('');
     const dispatch = useDispatch();
+    const [searchParams] = useSearchParams();
+    const redirect = searchParams.get('redirect');
+    console.log(redirect);
 
     // handle login
 
@@ -43,8 +46,12 @@ function LoginAccount() {
             });
 
             localStorage.setItem('token', res.data.token);
-            dispatch(successful());
-            navigate('/');
+            dispatch(signIn());
+            if (redirect === '/checkout') {
+                navigate('/checkout');
+            } else {
+                navigate('/');
+            }
         } catch (err) {
             if (err.response?.status === 403) {
                 setError('Your account has not been activated. Please check email to activate account.');
@@ -109,4 +116,4 @@ function LoginAccount() {
     );
 }
 
-export default LoginAccount;
+export default Login;
