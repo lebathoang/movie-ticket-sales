@@ -8,7 +8,7 @@ import Logo from '~/assets/images/logo.png';
 import { PrimaryButton } from '~/components/button';
 import { SixthButton } from '~/components/button';
 import Account from './acount';
-import CartShopping from '~/components/Cart_shopping/index';
+import CartShopping from '~/components/Cart_shopping';
 import './index.scss';
 
 function Header() {
